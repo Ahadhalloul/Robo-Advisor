@@ -216,7 +216,7 @@
   flex-direction: column;
   /* justify-content: center; */
   /* align-items: center; */
-  padding: 20px 30px;
+  padding: 15px 30px;
   box-shadow: 10px 0px 50px 0px #00000012;
 }
 
@@ -224,7 +224,7 @@
   width: 150px;
   height: 70px;
   /* background-color: blue; */
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .totel-investment {
   width: 190px;
@@ -304,13 +304,13 @@
 .sidebar-van-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   height: 70%;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
 }
 .sidebar-van-container .stock-prediction-select {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
 }
 
@@ -331,6 +331,7 @@ ul li {
   flex-direction: column;
   justify-content: center;
   padding-top: 10px;
+  padding-bottom: 20px;
 }
 .dashboard-icon-color {
   filter: brightness(0);
