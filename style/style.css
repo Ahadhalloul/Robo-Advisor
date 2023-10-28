@@ -2,8 +2,8 @@
 
 :root {
   --background-gray-color: #f5f7f9;
-  --text-blue-color: #3d3dfe;
   --primary-text-color: #000;
+  --text-focus-color: #3d3dfe;
 }
 
 * {
@@ -11,6 +11,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Manrope", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -19,11 +20,12 @@
     "sidebar header"
     "sidebar main";
   grid-template-columns: 280px auto;
-  grid-template-rows: 95px auto;
+  grid-template-rows: 90px auto;
 }
+
+/* ------------------------------------- */
+/* ------------------ start header ---------------- */
 .header-container {
-  /* width: 60%; */
-  height: 95px;
   grid-area: header;
   background-color: white;
   display: flex;
@@ -156,8 +158,8 @@
   margin-left: 10px;
 }
 
-/* ---------- main ------------ */
-
+/*---------------------------- */
+/* ---------- Start main ------------ */
 .main-container {
   grid-area: main;
   background-color: var(--background-gray-color);
@@ -191,8 +193,8 @@
 }
 
 .main-nav ul li a:hover {
-  border-bottom: 1px solid var(--text-blue-color);
-  color: var(--text-blue-color);
+  border-bottom: 1px solid var(--text-focus-color);
+  color: var(--text-focus-color);
 }
 
 .contant-container .card {
@@ -203,7 +205,8 @@
   width: 300px;
 }
 
-/* ---------- side bar --------------- */
+/*---------------------------- */
+/* ---------- Start side bar ----------------------- */
 .sidebar-container {
   display: flex;
   grid-area: sidebar;
@@ -393,3 +396,5 @@ ul li {
 .sidebar-van-container span {
   padding-left: 5px;
 }
+
+/*---------------------------- */
