@@ -500,6 +500,9 @@ ul li {
   color: #595961;
   margin-top: 3px;
 }
+.level-card-container {
+  margin-top: 25px;
+}
 .level-card button {
   width: 150px;
   height: 40px;
