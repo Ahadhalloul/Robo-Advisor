@@ -1,0 +1,12 @@
+<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Action / check circle">
+<mask id="mask0_1_5415" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="20" height="21">
+<g id="Icon Mask">
+<path id="Round" fill-rule="evenodd" clip-rule="evenodd" d="M2 12.2656C2 6.74563 6.48 2.26562 12 2.26562C17.52 2.26562 22 6.74563 22 12.2656C22 17.7856 17.52 22.2656 12 22.2656C6.48 22.2656 2 17.7856 2 12.2656ZM5.7 12.9656L9.29 16.5556C9.68 16.9456 10.32 16.9456 10.7 16.5556L18.29 8.96562C18.68 8.57562 18.68 7.94562 18.29 7.55562C17.9 7.16563 17.27 7.16563 16.88 7.55562L10 14.4356L7.11 11.5556C6.72 11.1656 6.09 11.1656 5.7 11.5556C5.51275 11.7425 5.40751 11.9961 5.40751 12.2606C5.40751 12.5251 5.51275 12.7788 5.7 12.9656Z" fill="black"/>
+</g>
+</mask>
+<g mask="url(#mask0_1_5415)">
+<rect id="Color Fill" y="0.265625" width="24" height="24" fill="#0000FF"/>
+</g>
+</g>
+</svg>

@@ -441,15 +441,13 @@ ul li {
 
 /*---------------------------- */
 /* ----------- Start portfolio optimization section-------------- */
-/* .portfolio-card {
-} */
+
 .welcome-card {
   padding: 60px 40px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
-  /* grid-template-rows: 200px; */
   box-shadow: 0px 10px 50px 0px #00000012;
   background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
 }
@@ -464,9 +462,10 @@ ul li {
   width: 250px;
 }
 .welcome-card img {
-  width: 400px;
+  width: 100%;
   /* height: 300px; */
 }
+
 .level-card-title {
   text-align: center;
   width: 100%;
@@ -479,7 +478,7 @@ ul li {
   color: #595961;
   padding: 10px;
 }
-.level-cards-container {
+.level-cards-content {
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -489,7 +488,7 @@ ul li {
 .level-card {
   box-shadow: 0px 12px 30px 0px #00000012;
   padding: 10px 20px;
-  width: 300px;
+  /* width: 300px; */
   /* height: 100px; */
   text-align: center;
   font-size: 18px;
@@ -499,6 +498,11 @@ ul li {
   font-size: 12px;
   color: #595961;
   margin-top: 3px;
+}
+@media screen and (min-width: 1200px) {
+  .level-card {
+    width: 300px;
+  }
 }
 .level-card-container {
   margin-top: 25px;
@@ -628,7 +632,7 @@ input::placeholder {
 button:hover {
   cursor: pointer;
 }
-/* ---------hide show assts section ---------------*/
+/* ---------hide show assets section ---------------*/
 .portfolio-assets-hide {
   display: none;
 }
@@ -649,12 +653,9 @@ button:hover {
 }
 .portfolio-assets-table {
   border: 1px solid #f0f0f0;
-  /* border-bottom: none; */
-  /* padding: 1px; */
   border-collapse: separate;
   border-spacing: 0;
   border-radius: 10px;
-  /* height: 150px; */
   width: 100%;
   margin-top: 10px;
 }
@@ -673,8 +674,6 @@ button:hover {
   border-top-right-radius: 9px;
 }
 
-/* tr td:not(:last-child) {
-} */
 tr td {
   padding: 10px;
   margin: 10px;
@@ -784,10 +783,10 @@ input::-webkit-outer-spin-button {
 .summary-title-content {
   font-size: 14px;
   font-weight: 700;
-  width: 90px;
+  width: 100px;
   border-bottom: 2px solid var(--text-focus-color);
   color: var(--text-focus-color);
-  padding-left: 5px;
+  padding: 0px 5px;
   padding-bottom: 3px;
 }
 .summary-content {
@@ -804,7 +803,12 @@ input::-webkit-outer-spin-button {
   width: 100%;
   font-size: 12px;
 }
-
+.check-circle-icon {
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+  padding-bottom: 2px;
+}
 .summary-assets-table thead {
   background-color: #f9f9f9;
   border-radius: 10px;
@@ -814,8 +818,6 @@ input::-webkit-outer-spin-button {
   padding: 10px;
   font-size: 12px;
   text-align: left;
-
-  /* text-align: center; */
 }
 .summary-assets-table thead th:first-child {
   border-top-left-radius: 9px;
@@ -862,7 +864,6 @@ tr:not(:last-child) td {
   padding: 5px 10px;
   text-align: center;
   border-radius: 5px;
-  /* margin: 0px 10px; */
   font-size: 16px;
   color: #6ab686;
 }
@@ -896,9 +897,6 @@ tr:not(:last-child) td {
   color: #6ab686;
 }
 
-.card-content .arrow-icon {
-  /* filter: brightness(2); */
-}
 .best-performing-chart {
   width: 100%;
   height: 300px;

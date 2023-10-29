@@ -1,4 +1,4 @@
-// let advancedDetailArrow = document.getElementById("hideShowAdvancedDetail");
+// ------show and hide assets section in portfolio expert level----------
 let advancedDetail = document.getElementById("portfolio-assets");
 let showArrow = document.getElementById("showArrow");
 function hideShowAdvancedDetail() {
