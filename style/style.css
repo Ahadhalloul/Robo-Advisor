@@ -646,11 +646,16 @@ button:hover {
   border: none;
   width: 90%;
 }
+
 @media screen and (max-width: 1200px) {
   .table-input {
     width: 80%;
   }
+  .container {
+    grid-template-columns: 260px auto;
+  }
 }
+
 .input-container {
   border: 1px solid var(--light-gray);
   border-radius: 5px;
