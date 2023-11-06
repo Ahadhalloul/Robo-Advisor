@@ -42,6 +42,12 @@ body {
   padding: 30px;
   box-shadow: 0px 20px 50px 0px #00000012;
   z-index: 1;
+
+  /* to make header fixed */
+  /* width: 80%;
+  position: fixed;
+  height: 90px;
+  margin-left: 280px; */
 }
 
 .search-container {
@@ -181,6 +187,10 @@ body {
   /* align-items: center; */
   padding: 15px 30px;
   box-shadow: 10px 0px 50px 0px #00000012;
+
+  /* to make sidebar fixed */
+  /* width: 280px;
+  position: fixed; */
 }
 
 .logo img {
@@ -916,3 +926,178 @@ tr:not(:last-child) td {
 /*---------------------------- */
 /* ----------- Start compare portfolio section-------------- */
 /* ----------- End compare portfolio section-------------- */
+
+/* ----------- Start stock analysis section-------------- */
+.stock-analysis-nav ul {
+  display: flex;
+  flex-direction: row;
+}
+.stock-analysis-nav ul li {
+  list-style: none;
+  padding: 7px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+.stock-analysis-nav ul li a {
+  border-bottom: 1px solid gray;
+  text-decoration: none;
+  color: var(--primary-text-color);
+  padding: 8px 10px;
+  font-size: 14px;
+}
+
+.stock-analysis-nav ul li a:hover {
+  border-bottom: 1px solid var(--text-focus-color);
+  color: var(--text-focus-color);
+}
+.focused {
+  color: #0000ff !important;
+  border-bottom: 1px solid #0000ff !important;
+}
+.model {
+  margin: 20px 15px;
+}
+.model h3 {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.model-label {
+  font-weight: 700;
+  font-size: 12px;
+  margin-right: 30px;
+}
+
+.switch-btn-bg {
+  height: 17px;
+  width: 42px;
+  background-color: #dadee3;
+  border-radius: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 7px;
+}
+.on {
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  background-color: #0000ff;
+  box-sizing: content-box;
+  border: 8px solid #b7bfeb;
+  margin-top: -9px;
+  margin-left: 9px;
+}
+.off {
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  background-color: #242424;
+  margin-top: -2px;
+}
+.future-prediction-inputs-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  padding: 5px 15px;
+  gap: 30px;
+  width: 100%;
+}
+.future-prediction-input {
+  width: 100%;
+}
+
+.future-prediction-inputs-container .input {
+  border: 1px solid #858c94;
+  border-radius: 5px;
+  padding: 2px 5px;
+  margin-top: 5px;
+  margin-left: -10px;
+}
+
+.future-prediction-input h6 {
+  font-size: 10px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.future-prediction-inputs-container .input img {
+  height: 15px;
+  width: 15px;
+  vertical-align: middle;
+  float: right;
+  margin-top: 6px;
+}
+.future-prediction-inputs-container input {
+  border: none;
+  width: 70%;
+}
+.future-prediction-input label {
+  padding-bottom: 10px;
+}
+
+.submit-button {
+  width: 120px;
+  height: 35px;
+  padding: 10px, 14px;
+  border-radius: 8px;
+  border: 1px solid var(--light-gray);
+  background: linear-gradient(90deg, #1ed760 0%, #0000ff 100%);
+  font-size: 12px;
+  color: white;
+  float: right;
+  margin: 20px 0px;
+}
+
+.confidence-card {
+  margin-top: 30px;
+}
+.convedence-level-rate-box {
+  width: 100%;
+  margin: 25px 0px;
+  padding: 15px 20px;
+  border: 1px solid #3da864;
+  background-color: #fafffb;
+  color: #3da864;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.convedence-level-rate-box h4 {
+  background-color: white;
+  box-shadow: 0px 9px 30px 0px #00000012;
+  width: 90px;
+  padding: 10px 14px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #6ab686;
+}
+.convedence-level-rate-box img {
+  width: 12px;
+  height: 12px;
+}
+
+.convedence-level-rate-box .rate-icon {
+  vertical-align: bottom;
+  width: 15px;
+  height: 15px;
+}
+.convedence-level-rate-box .red-color {
+  color: red;
+}
+.values-flex {
+  display: flex;
+  gap: 10px;
+  margin: 15px;
+  justify-content: center;
+  align-items: center;
+}
+.bar-progres {
+  padding: 20px;
+}
+.median-chart {
+  height: 200px;
+}
+/* ----------- End  stock analysis section-------------- */

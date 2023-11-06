@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Robo Advisor</title>
+    <!----- main style sheet  ---------->
+    <link rel="stylesheet" href="./style/style.css" />
+    <!------ Add feather icons --------- -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.11.0/css/flag-icons.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!--------------- start header -------------- -->
+      <div class="header-container">
+        <div class="search-container">
+          <i data-feather="search" class="search-icon"></i>
+          <input
+            type="search"
+            class="search-bar"
+            placeholder="Search for various stocks"
+          />
+        </div>
+
+        <div class="header-user-nav">
+          <div class="currency">
+            <select name="" id="" class="select-currency">
+              <option value="">USD</option>
+            </select>
+            <span><img src="./icons/Polygon 1.svg" alt="" srcset="" /></span>
+          </div>
+          <div class="messege-icon-container">
+            <!-- <i data-feather="mail" class="messege-icon"></i> -->
+            <img src="./icons/Frame 39.svg" alt="" srcset="" />
+          </div>
+          <div class="notify-icon-container">
+            <i data-feather="bell" class="notify-icon"></i>
+            <div class="notification-count">2</div>
+          </div>
+          <div class="line"></div>
+          <div class="user">
+            <div class="user-img">
+              <img
+                class="user-icon"
+                src="./icons/Mask group.svg"
+                alt=""
+                srcset=""
+              />
+            </div>
+            <h4 class="user-name">Talal Al-Ahmady</h4>
+            <img class="user-down-arrow" src="./icons/Frame-2.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <!--------------- End Header -------------- -->
+
+      <!--------------- start main -------------- -->
+      <main class="main-container">
+        <div class="title">Stock Analysis</div>
+        <div class="contant-container">
+          <div class="stock-analysis-nav">
+            <ul>
+              <li><a href="#">Stock Investigation</a></li>
+              <li><a href="#">Hypothetical Investment</a></li>
+              <li><a class="focused" href="#">Future Prediction</a></li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="card-head">Future Prediction</div>
+            <div class="model">
+              <h3>Model <span class="required-star">*</span></h3>
+              <div class="model-btns">
+                <div class="switch-btn-bg">
+                  <div class="on"></div>
+                </div>
+                <label class="model-label" for="">Statistical</label>
+                <div class="switch-btn-bg">
+                  <div class="off"></div>
+                </div>
+                <label class="model-label" for="">All</label>
+              </div>
+            </div>
+
+            <div class="future-prediction-inputs-container">
+              <div class="future-prediction-input">
+                <label for="">
+                  Stock <span class="required-star"> * </span>
+                </label>
+                <div class="input">
+                  <input type="text" name="" id="" placeholder="AAPL" />
+                  <img src="./icons/search.svg" alt="" />
+                  <img src="./icons/arrow drop_down.svg" alt="" />
+                </div>
+                <h6>Choose Stock</h6>
+              </div>
+
+              <div class="future-prediction-input">
+                <label for="">
+                  Invested Amount <span class="required-star"> * </span>
+                </label>
+                <div class="input">
+                  <input type="text" name="" id="" placeholder="$ 1000" />
+                  <img src="./icons/remove circle_outline.svg" alt="" />
+                  <img src="./icons/add circle_outline.svg" alt="" />
+                </div>
+                <h6>Type in a hypothetical investment amount</h6>
+              </div>
+
+              <div class="future-prediction-input">
+                <label for="">
+                  Forecasting Days <span class="required-star"> * </span>
+                </label>
+                <div class="input">
+                  <input type="text" name="" id="" placeholder="7 Days" />
+                  <img src="./icons/remove circle_outline.svg" alt="" />
+                  <img src="./icons/add circle_outline.svg" alt="" />
+                </div>
+                <h6>Type the number of days</h6>
+              </div>
+            </div>
+
+            <button class="submit-button">
+              Submit
+              <span>
+                <i class="right-arrow-icon" data-feather="arrow-right"></i>
+              </span>
+            </button>
+            <div class="clear-fix"></div>
+          </div>
+          <div class="card confidence-card">
+            <div class="card-head">Confidence Level</div>
+            <div class="bar-progres">
+              <!-- here bar progress -->
+            </div>
+
+            <div class="convedence-level-rate-box">
+              <div>
+                <img class="rate-icon" src="./icons/uis_chart.svg" alt="" />
+                <span>
+                  There’s a 80% chance that investing $1,000 for 7 days will be
+                  between
+                </span>
+                <div class="values-flex">
+                  <h4 class="red-color">
+                    $903 <img src="./icons/Vector.svg" alt="" />
+                  </h4>
+                  <h4>$1,166 <img src="./icons/Vector2.svg" alt="" /></h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="median-prediction">
+              <div class="card-head">
+                Median prediction with 5% lower & upper band
+              </div>
+              <div class="median-chart">
+                <!-- chart here -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!--------------- End main -------------- -->
+
+      <!--------------- Start SideBar -------------- -->
+      <div class="sidebar-container">
+        <div class="logo">
+          <img src="./icons/Asset 9@4x 1.svg" alt="" />
+        </div>
+        <div class="totel-investment">
+          <h6>Total Investment</h6>
+          <h5 class="total-investment-rate">
+            <span> +18,10% </span>
+            <span class="arrow-icon">
+              <img src="./icons/Frame.svg" alt="" srcset="" />
+            </span>
+          </h5>
+          <h4>$5380,90 <i data-feather="eye-off" class="eye-icon"></i></h4>
+        </div>
+        <div class="mode">
+          <h6 class="light-mode">
+            <i data-feather="sun" class="light-icon"></i>
+            <span>Light</span>
+          </h6>
+          <h6 class="dark-mode">
+            <i data-feather="moon" class="dark-icon"></i>
+            <span>Dark</span>
+          </h6>
+        </div>
+
+        <div class="sidebar-van-container">
+          <div class="sidebar-up-nav-container">
+            <ul>
+              <li>
+                <a href="index.html">
+                  <img
+                    src="./icons/radix-icons_dashboard.svg"
+                    alt=""
+                    srcset=""
+                    class="sidebar-icon-size dashboard-icon-color"
+                  />
+                  <span> Dashboard</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img
+                    src="./icons/solar_graph-up-broken.svg"
+                    alt=""
+                    srcset=""
+                    class="sidebar-icon-size"
+                  />
+                  <div class="stock-prediction-select-container">
+                    <span class="stock-prediction-select">
+                      Stock Prediction
+                    </span>
+                    <img src="./icons/Polygon 1.svg" alt="" srcset="" />
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="stock-recommendation.html">
+                  <img
+                    src="./icons/ph_hand-coins.svg"
+                    alt=""
+                    srcset=""
+                    class="sidebar-icon-size"
+                  />
+                  <span> Stock Recommendation</span>
+                </a>
+              </li>
+              <li>
+                <a href="portfolio-optimization.html">
+                  <img
+                    src="./icons/fluent_wallet-16-regular.svg"
+                    alt=""
+                    srcset=""
+                    class="sidebar-icon-size"
+                  />
+                  <span> Portfolio Optimization</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img
+                    src="./icons/octicon_git-compare-24.svg"
+                    alt=""
+                    srcset=""
+                    class="sidebar-icon-size"
+                  />
+                  <span> Compare Portfolios</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="sidebar-bottom-nav-container">
+            <ul>
+              <li>
+                <a href="">
+                  <img
+                    src="./icons/heroicons-outline_newspaper.svg"
+                    alt=""
+                    srcset=""
+                    class="sidebar-icon-size"
+                  />
+                  <span> News</span>
+                </a>
+              </li>
+              <li>
+                <a href="" class="setting-container">
+                  <div class="setting-icon-text-box">
+                    <img
+                      src="./icons/ion_settings-outline.svg"
+                      alt=""
+                      srcset=""
+                      class="sidebar-icon-size"
+                    />
+                    <span>Settings</span>
+                  </div>
+                  <span class="setting-notification-count">6</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img
+                    src="./icons/fluent_call-24-regular.svg"
+                    alt=""
+                    srcset=""
+                    class="sidebar-icon-size"
+                  />
+                  <span> Support</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img
+                    src="./icons/solar_logout-linear.svg"
+                    alt=""
+                    srcset=""
+                    class="sidebar-icon-size"
+                  />
+                  <span> Logout</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--------------- End SideBar -------------- -->
+    </div>
+
+    <!-- feather icons script ------------ -->
+    <script>
+      feather.replace();
+    </script>
+    <script src="main.js"></script>
+  </body>
+</html>
