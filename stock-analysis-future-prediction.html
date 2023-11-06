@@ -65,16 +65,103 @@
         <div class="contant-container">
           <div class="stock-analysis-nav">
             <ul>
-              <li><a class="focused" href="#">Stock Analysis</a></li>
+              <li><a href="#">Stock Investigation</a></li>
               <li><a href="#">Hypothetical Investment</a></li>
-              <li><a href="#">Future Prediction</a></li>
+              <li><a class="focused" href="#">Future Prediction</a></li>
             </ul>
           </div>
+          <div class="card">
+            <div class="card-head">Future Prediction</div>
+            <div class="model">
+              <h3>Model <span class="required-star">*</span></h3>
+              <div class="model-btns">
+                <div class="switch-btn-bg">
+                  <div class="on"></div>
+                </div>
+                <label class="model-label" for="">Statistical</label>
+                <div class="switch-btn-bg">
+                  <div class="off"></div>
+                </div>
+                <label class="model-label" for="">All</label>
+              </div>
+            </div>
 
-          <div class="stock-analysis-cards-container">
-            <div class="card card1">t1</div>
-            <div class="card card2">t2</div>
-            <div class="card card3">t3</div>
+            <div class="future-prediction-inputs-container">
+              <div class="future-prediction-input">
+                <label for="">
+                  Stock <span class="required-star"> * </span>
+                </label>
+                <div class="input">
+                  <input type="text" name="" id="" placeholder="AAPL" />
+                  <img src="./icons/search.svg" alt="" />
+                  <img src="./icons/arrow drop_down.svg" alt="" />
+                </div>
+                <h6>Choose Stock</h6>
+              </div>
+
+              <div class="future-prediction-input">
+                <label for="">
+                  Invested Amount <span class="required-star"> * </span>
+                </label>
+                <div class="input">
+                  <input type="text" name="" id="" placeholder="$ 1000" />
+                  <img src="./icons/remove circle_outline.svg" alt="" />
+                  <img src="./icons/add circle_outline.svg" alt="" />
+                </div>
+                <h6>Type in a hypothetical investment amount</h6>
+              </div>
+
+              <div class="future-prediction-input">
+                <label for="">
+                  Forecasting Days <span class="required-star"> * </span>
+                </label>
+                <div class="input">
+                  <input type="text" name="" id="" placeholder="7 Days" />
+                  <img src="./icons/remove circle_outline.svg" alt="" />
+                  <img src="./icons/add circle_outline.svg" alt="" />
+                </div>
+                <h6>Type the number of days</h6>
+              </div>
+            </div>
+
+            <button class="submit-button">
+              Submit
+              <span>
+                <i class="right-arrow-icon" data-feather="arrow-right"></i>
+              </span>
+            </button>
+            <div class="clear-fix"></div>
+          </div>
+          <div class="card confidence-card">
+            <div class="card-head">Confidence Level</div>
+            <div class="bar-progres">
+              <!-- here bar progress -->
+            </div>
+
+            <div class="convedence-level-rate-box">
+              <div>
+                <img class="rate-icon" src="./icons/uis_chart.svg" alt="" />
+                <span>
+                  There’s a 80% chance that investing $1,000 for 7 days will be
+                  between
+                </span>
+                <div class="values-flex">
+                  <h4 class="red-color">
+                    $903 <img src="./icons/Vector.svg" alt="" />
+                  </h4>
+                  <h4>$1,166 <img src="./icons/Vector2.svg" alt="" /></h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="median-prediction">
+              <div class="card-head">
+                Median prediction with 5% lower & upper band
+              </div>
+              <div class="median-chart">
+                <!-- chart here -->
+              </div>
+            </div>
           </div>
         </div>
       </main>

@@ -927,7 +927,11 @@ tr:not(:last-child) td {
 /* ----------- Start compare portfolio section-------------- */
 /* ----------- End compare portfolio section-------------- */
 
-/* ----------- Start stock analysis section-------------- */
+/* ----------- Start  stock analysis (future prediction nav)  section-------------- */
+.card {
+  box-shadow: 0px 10px 50px 0px #00000012;
+}
+
 .stock-analysis-nav ul {
   display: flex;
   flex-direction: row;
@@ -1100,4 +1104,24 @@ tr:not(:last-child) td {
 .median-chart {
   height: 200px;
 }
-/* ----------- End  stock analysis section-------------- */
+/* ----------- End  stock analysis (future prediction nav) section -------------- */
+
+/* ----------- start stock analysis (stock analysis nav) section-------------- */
+
+.stock-analysis-cards-container {
+  display: grid;
+  grid-template-areas:
+    "card1 card1 card1"
+    "card2 card3 card3";
+  gap: 10px 20px;
+}
+.card1 {
+  grid-area: card1;
+}
+.card2 {
+  grid-area: card2;
+}
+.card3 {
+  grid-area: card3;
+}
+/* ----------- end  stock analysis (stock analysis nav) section-------------- */
