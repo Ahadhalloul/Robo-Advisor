@@ -1111,17 +1111,145 @@ tr:not(:last-child) td {
 .stock-analysis-cards-container {
   display: grid;
   grid-template-areas:
-    "card1 card1 card1"
-    "card2 card3 card3";
+    "analysis-chart-card analysis-chart-card analysis-chart-card"
+    "watch-list-card apple-inc-card apple-inc-card";
   gap: 10px 20px;
 }
-.card1 {
-  grid-area: card1;
+.analysis-chart-card {
+  grid-area: analysis-chart-card;
 }
-.card2 {
-  grid-area: card2;
+.watch-list-card {
+  grid-area: watch-list-card;
 }
-.card3 {
-  grid-area: card3;
+.apple-inc-card {
+  grid-area: apple-inc-card;
+}
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0px auto;
+  max-width: 650px;
+  color: #595961;
+}
+.select-aapl,
+.select-time {
+  border: 1px solid #cccccc;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+.select-aapl select {
+  appearance: none;
+  border: none;
+  color: #595961;
+  font-size: 12px;
+  padding: 0px 5px;
+}
+.chart-header .hour {
+  color: #feba08;
+}
+.select-time span {
+  padding-right: 5px;
+}
+.analysis-chart-card .down-arrow {
+  width: 12px;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+.chart-header img {
+  width: 20px;
+  height: 20px;
+}
+.watch-list-title {
+  margin-bottom: 10px;
+}
+.watch-list-title img {
+  width: 15px;
+  margin-right: 10px;
+}
+.watch-list-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e9e9e9;
+  padding: 10px;
+}
+.watch-list-content h4 {
+  font-size: 14px;
+  color: #212121;
+}
+.watch-list-content h3 {
+  color: #848484;
+  font-size: 14px;
+  font-weight: 400;
+}
+.watch-list-content .purchase {
+  text-align: center;
+}
+.watch-list-content .purchase h3 {
+  font-weight: 600;
+}
+
+.watch-list {
+  display: flex;
+  align-items: center;
+}
+.watch-list input,
+.watch-list img {
+  margin-right: 5px;
+}
+.watch-list-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.watch-list img {
+  width: 38px;
+  height: 38px;
+}
+.watch-list input {
+  appearance: none;
+  border-radius: 2px;
+}
+.watch-list .spot-img {
+  width: 42px;
+  height: 42px;
+}
+.apple-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.apple-title h5 {
+  color: #848484;
+  font-weight: 300;
+}
+.apple-title img {
+  margin-right: 10px;
+  width: 42px;
+  height: 42px;
+}
+.apple-sub-title {
+  padding-bottom: 10px;
+}
+.apple-sub-title span {
+  font-weight: 600;
+}
+.apple-sub-title img {
+  width: 19px;
+  vertical-align: middle;
+  color: gray;
+}
+.apple-sub-title2 {
+  color: #7a7a7a;
+}
+.apple-sub-title2 span {
+  padding-right: 4px;
+}
+.apple-header {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e9e9e9;
 }
 /* ----------- end  stock analysis (stock analysis nav) section-------------- */
