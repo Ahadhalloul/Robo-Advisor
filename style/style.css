@@ -1348,4 +1348,93 @@ tr:not(:last-child) td {
   vertical-align: bottom;
   margin-left: 3px;
 }
+
+/* chart box  */
+.analysis-chart-box {
+  height: 450px;
+  position: relative;
+}
+.analysis-chart-box .chart-popup {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  height: 390px;
+  width: 300px;
+  box-shadow: 0px 10px 50px 0px #00000012;
+  border-radius: 15px;
+  border-left: 4px solid #0000ff;
+  padding: 15px 10px;
+}
+.chart-popup .chart-popup-taps {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 16px;
+  padding: 0px 5px;
+}
+.chart-popup .chart-popup-taps img {
+  width: 22px;
+  height: 22px;
+  vertical-align: bottom;
+  margin-right: 3px;
+}
+.chart-popup .chart-popup-taps a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
+
+.chart-popup .popup-bg {
+  background-color: #f4f4f4;
+  border-radius: 5px;
+}
+.chart-popup .popup-content {
+  padding: 10px;
+  margin: 10px 0px;
+}
+.chart-popup .popup-content .flex-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.chart-popup .popup-content .flex-text img {
+  vertical-align: bottom;
+}
+.chart-popup .popup-content p {
+  color: #000;
+  font-weight: 600;
+  font-size: 14px;
+}
+.chart-popup .popup-content .flex-text span {
+  font-size: 13px;
+  color: #7a7a7a;
+}
+.chart-popup .popup-content .flex-text span img {
+  width: 20px;
+  margin-right: 3px;
+}
+.chart-popup .popup-content .flex-text .flex-icons {
+  display: flex;
+  margin-left: 15px;
+}
+.chart-popup .popup-content .flex-text .flex-icons img {
+  width: 30px;
+  margin-left: -15px;
+}
+.chart-popup .popup-content p {
+  padding-top: 5px;
+}
+.chart-popup .more-news {
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  color: #000;
+  padding-left: 10px;
+}
+.chart-popup .more-news img {
+  width: 20px;
+  vertical-align: bottom;
+  margin-left: 4px;
+}
 /* ----------- end  stock analysis (stock analysis nav) section-------------- */
