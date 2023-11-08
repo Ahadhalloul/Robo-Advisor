@@ -275,15 +275,15 @@ body {
   color: rgb(255, 208, 0);
 }
 .sidebar-van-container {
+  font-size: 16px;
   display: flex;
   flex-direction: column;
   /* justify-content: space-between; */
   height: 70%;
-  font-size: 14px;
   font-weight: 700;
 }
 .sidebar-van-container .stock-prediction-select {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -394,17 +394,17 @@ ul li {
   margin: 15px 0px;
 }
 .card {
+  padding: 20px 18px;
   background-color: #fff;
   margin-top: 10px;
   border-radius: 10px;
-  padding: 20px 15px;
 }
 .card-head {
+  font-weight: 700;
   border-bottom: 1px solid #f0f0f0;
   /* padding: 20px 0px; */
   padding-bottom: 25px;
   font-size: 16px;
-  font-weight: 600;
 }
 /*---------------------------- */
 /* ----------- Start Dashboard section-------------- */
@@ -435,11 +435,13 @@ ul li {
   margin-right: 20px;
 }
 .stock-recommendation-nav ul li a {
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #dadee3;
+  color: #545d69;
+  font-weight: 600;
   text-decoration: none;
-  color: var(--primary-text-color);
   padding: 8px 10px;
   font-size: 14px;
+  transition: 0.3s;
 }
 
 .stock-recommendation-nav ul li a:hover {
@@ -943,11 +945,13 @@ tr:not(:last-child) td {
   margin-right: 20px;
 }
 .stock-analysis-nav ul li a {
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #dadee3;
+  color: #545d69;
+  font-weight: 600;
   text-decoration: none;
-  color: var(--primary-text-color);
   padding: 8px 10px;
   font-size: 14px;
+  font-weight: 600;
 }
 
 .stock-analysis-nav ul li a:hover {
@@ -962,8 +966,8 @@ tr:not(:last-child) td {
   margin: 20px 15px;
 }
 .model h3 {
+  font-weight: 500;
   font-size: 14px;
-  font-weight: 400;
   margin-bottom: 20px;
 }
 .model-label {
@@ -999,6 +1003,7 @@ tr:not(:last-child) td {
   margin-top: -2px;
 }
 .future-prediction-inputs-container {
+  font-weight: 500;
   display: flex;
   justify-content: space-between;
   font-size: 14px;
@@ -1019,17 +1024,17 @@ tr:not(:last-child) td {
 }
 
 .future-prediction-input h6 {
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 400;
   margin-top: 5px;
 }
 
 .future-prediction-inputs-container .input img {
-  height: 15px;
-  width: 15px;
+  width: 17px;
   vertical-align: middle;
   float: right;
-  margin-top: 6px;
+  margin-top: 5px;
+  margin-left: 5px;
 }
 .future-prediction-inputs-container input {
   border: none;
@@ -1040,6 +1045,7 @@ tr:not(:last-child) td {
 }
 
 .submit-button {
+  margin: 20px 10px;
   width: 120px;
   height: 35px;
   padding: 10px, 14px;
@@ -1049,7 +1055,6 @@ tr:not(:last-child) td {
   font-size: 12px;
   color: white;
   float: right;
-  margin: 20px 0px;
 }
 
 .confidence-card {
@@ -1062,7 +1067,7 @@ tr:not(:last-child) td {
   border: 1px solid #3da864;
   background-color: #fafffb;
   color: #3da864;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 700;
   text-align: center;
   border-radius: 4px;
@@ -1438,3 +1443,262 @@ tr:not(:last-child) td {
   margin-left: 4px;
 }
 /* ----------- end  stock analysis (stock analysis nav) section-------------- */
+/* ----------- start  compare portfolios section-------------- */
+.choose-portfolio-card {
+  padding-bottom: 10px;
+}
+.choose-portfolio-card .inputs-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 20px 15px;
+  gap: 30px;
+  width: 100%;
+}
+.input-content {
+  width: 100%;
+}
+
+.inputs-container .input {
+  border: 1px solid #858c94;
+  border-radius: 5px;
+  padding: 2px 5px;
+  margin-top: 5px;
+  margin-left: -10px;
+}
+
+.input-content h6 {
+  font-size: 11px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.inputs-container .input img {
+  width: 17px;
+  vertical-align: middle;
+  float: right;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.inputs-container input {
+  border: none;
+  width: 70%;
+}
+.portfolios-number label {
+  font-size: 14px;
+  padding-left: 15px;
+  font-weight: 500;
+}
+.portfolios-number-bar {
+  margin: 20px;
+}
+.cancle-btn {
+  width: 80px;
+  height: 35px;
+  padding: 10px, 14px;
+  border-radius: 8px;
+  border: 1px solid var(--light-gray);
+  background-color: white;
+  font-size: 12px;
+  margin-right: 5px;
+  font-weight: 600;
+}
+.choose-portfolio-card .buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.tabs ul {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.tabs ul li {
+  list-style: none;
+  padding: 7px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+.tabs ul li a {
+  border-bottom: 1px solid #dadee3;
+  text-decoration: none;
+  color: var(--primary-text-color);
+  padding: 8px 10px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s;
+  padding-left: 25px;
+}
+
+.tabs ul li a:hover {
+  border-bottom: 1px solid var(--text-focus-color);
+  color: var(--text-focus-color);
+}
+.focused {
+  color: #0000ff !important;
+  border-bottom: 1px solid #0000ff !important;
+}
+.tabs img {
+  vertical-align: middle;
+  margin-bottom: 3px;
+  width: 15px;
+}
+
+.checkmark-icon {
+  position: relative;
+}
+.checkmark-icon:after {
+  content: "✔";
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  width: 14px;
+  height: 14px;
+  text-align: center;
+  background: #858c94;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 300;
+  margin-left: -19px;
+}
+
+.focused .checkmark-icon:after,
+.tabs ul li a:hover .checkmark-icon:after {
+  background: #0000ff;
+}
+
+.weight-style-input h5 {
+  font-weight: 500;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+.weight-style-input label {
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0px 18px 0px 12px;
+}
+.align-item {
+  display: flex;
+  align-items: center;
+}
+
+.weight-style-input input {
+  appearance: none;
+}
+.weight-style-input input:checked {
+  border-radius: 50%;
+  border: 3px solid #0000ff;
+  box-sizing: border-box;
+  padding: 3px;
+  position: relative;
+  width: 13px;
+  height: 13px;
+}
+.weight-style-input input:checked::before {
+  content: "";
+  width: 13px;
+  height: 13px;
+  border: 7px solid #b7bfeb54;
+  position: absolute;
+  border-radius: 50%;
+  left: -10px;
+  margin-top: -13px;
+}
+.flex-text-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  /* justify-content: space-between; */
+}
+.flex-text-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+.risk-return-content {
+  margin: 20px;
+}
+.risk-return-content h5 {
+  font-size: 14px;
+  margin-top: 20px;
+}
+.risk-return-content h6 {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 20px;
+  color: #3da864;
+}
+.risk-return-content .risk-return-chart {
+  min-width: 300px;
+  min-height: 200px;
+  box-shadow: 0px 12px 30px 0px #00000012;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.weight-distribution-card .flex-text-row {
+  gap: 20px;
+  /* justify-content: space-between; */
+}
+
+.weight-distribution-container .section-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+.weight-distribution-container .section-title img {
+  width: 20px;
+  margin-right: 10px;
+}
+.weight-distribution-container .section-sub-title {
+  font-size: 12px;
+  margin: 10px;
+}
+.weight-distribution-container .arrow-up {
+  position: absolute;
+  right: 10px;
+}
+
+/* hide portfolio weight distribution section  */
+.weight-distribution-card {
+  display: none;
+}
+.show {
+  display: block;
+}
+.portfolio-cumulative-section {
+  margin-top: 30px;
+}
+.no-gap {
+  gap: 0;
+}
+.portfolio-cumulative-section .card-head {
+  margin-bottom: 20px;
+}
+.small-card {
+  padding: 10px;
+  background-color: #fff;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 12px 30px 0px #00000012;
+}
+.green-text {
+  color: #6ab686;
+}
+.portfolio-cumulative-section .stock-return {
+  margin: 25px 0px;
+  font-weight: 500;
+}
+.portfolio-cumulative-section h5 {
+  padding-left: 10px;
+}
+.portfolio-cumulative-content .flex-text-row {
+  gap: 7px;
+}
+/* ----------- end  compare portfolios section-------------- */

@@ -15,3 +15,11 @@ function hideShowAdvancedDetail() {
 //   console.log(tickerRow);
 //   console.log(tickerTable);
 // }
+
+let portfolioWeightDistributionCard = document.getElementById(
+  "portfolio-weight-distribution-card"
+);
+let arrow2 = document.getElementById("weights-distribution-arrow");
+function showsection() {
+  portfolioWeightDistributionCard.classList.toggle("show");
+}

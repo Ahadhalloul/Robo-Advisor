@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Robo Advisor</title>
+    <!----- main style sheet  ---------->
+    <link rel="stylesheet" href="./style/style.css" />
+    <!------ Add feather icons --------- -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.11.0/css/flag-icons.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!--------------- start header -------------- -->
+      <div class="header-container">
+        <div class="search-container">
+          <i data-feather="search" class="search-icon"></i>
+          <input
+            type="search"
+            class="search-bar"
+            placeholder="Search for various stocks"
+          />
+        </div>
+
+        <div class="header-user-nav">
+          <div class="currency">
+            <select name="" id="" class="select-currency">
+              <option value="">USD</option>
+            </select>
+            <span><img src="./icons/Polygon 1.svg" alt="" srcset="" /></span>
+          </div>
+          <div class="messege-icon-container">
+            <!-- <i data-feather="mail" class="messege-icon"></i> -->
+            <img src="./icons/Frame 39.svg" alt="" srcset="" />
+          </div>
+          <div class="notify-icon-container">
+            <i data-feather="bell" class="notify-icon"></i>
+            <div class="notification-count">2</div>
+          </div>
+          <div class="line"></div>
+          <div class="user">
+            <div class="user-img">
+              <img
+                class="user-icon"
+                src="./icons/Mask group.svg"
+                alt=""
+                srcset=""
+              />
+            </div>
+            <h4 class="user-name">Talal Al-Ahmady</h4>
+            <img class="user-down-arrow" src="./icons/Frame-2.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <!--------------- End Header -------------- -->
+
+      <!--------------- start main -------------- -->
+      <main class="main-container">
+        <div class="title">Compare Portfolios</div>
+        <div class="contant-container">
+          <div class="card choose-portfolio-card">
+            <div class="card-head">Choose Portfilios to Compare</div>
+
+            <div class="inputs-container">
+              <div class="input-content">
+                <label for="">
+                  Portfolio 1 <span class="required-star"> * </span>
+                </label>
+                <div class="input">
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="AAPL, ORCL, NDVA"
+                  />
+                  <img src="./icons/arrow drop_down.svg" alt="" />
+                  <img src="./icons/search.svg" alt="" />
+                </div>
+                <h6>Choose Stock</h6>
+              </div>
+
+              <div class="input-content">
+                <label for="">
+                  Portfolio 2 <span class="required-star"> * </span>
+                </label>
+                <div class="input">
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="AAPL, ORCL, NDVA"
+                  />
+                  <img src="./icons/arrow drop_down.svg" alt="" />
+                  <img src="./icons/search.svg" alt="" />
+                </div>
+                <h6>Type in a hypothetical investment amount</h6>
+              </div>
+
+              <div class="input-content">
+                <label for="">
+                  Forecasting Days <span class="required-star"> * </span>
+                </label>
+                <div class="input">
+                  <input type="text" name="" id="" placeholder="7 Days" />
+                  <img src="./icons/remove circle_outline.svg" alt="" />
+                  <img src="./icons/add circle_outline.svg" alt="" />
+                </div>
+                <h6>Type the number of days</h6>
+              </div>
+            </div>
+            <div class="portfolios-number">
+              <label for=""
+                >Number of Portfolios you Want to Genetare
+                <span class="required-star">*</span>
+              </label>
+              <div class="portfolios-number-bar">
+                <!-- here progress bar  -->
+              </div>
+            </div>
+            <div class="buttons">
+              <button class="cancle-btn">Cancel</button>
+              <button class="submit-button">
+                Submit
+                <span>
+                  <i class="right-arrow-icon" data-feather="arrow-right"></i>
+                </span>
+              </button>
+            </div>
+          </div>
+          <div class="card best-risk-card">
+            <div class="tabs">
+              <ul>
+                <li>
+                  <a href="#"
+                    ><span class="checkmark-icon"></span>
+                    Cumulative Returns
+                  </a>
+                </li>
+                <li>
+                  <a class="focused" href="#"
+                    ><span class="checkmark-icon"></span>
+
+                    Optimize Portfolios
+                  </a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><span class="checkmark-icon"></span>
+                    Portfolios Prediction
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="best-risk-card-content">
+              <div class="card-head">Best Risk Returns Combination</div>
+              <div class="weight-style-input">
+                <h5>
+                  Choose Weight Style <span class="required-star">*</span>
+                </h5>
+                <div class="align-item">
+                  <input checked type="radio" id="eqwal-weight" name="weight" />
+                  <label for="eqwal-weight">Equal Weights</label>
+                  <input type="radio" id="random-weight" name="weight" />
+                  <label for="random-weight">Random Weights</label>
+                </div>
+              </div>
+              <div class="risk-return-content flex-text-row">
+                <div class="">
+                  <h5>Recommended Portfolio</h5>
+                  <h6>Risk-return Chart</h6>
+                  <div class="risk-return-chart">
+                    <!-- here chart -->
+                  </div>
+                </div>
+                <div>
+                  <h5>User Portfolio</h5>
+                  <h6>Risk-return Chart</h6>
+                  <div class="risk-return-chart">
+                    <!-- here chart -->
+                  </div>
+                </div>
+              </div>
+              <!-- portfolio weight distribution section -->
+              <div class="card weight-distribution-container">
+                <div class="section-title">
+                  <img src="./icons/tabler_chart-pie.svg" alt="" />
+                  <h4>Portfolio Weights Distribution</h4>
+                  <img
+                    onclick="showsection()"
+                    id="weights-distribution-arrow"
+                    class="arrow-up"
+                    src="./icons/Vector111.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="clear-fix"></div>
+                <div class="flex-text-row">
+                  <div
+                    id="portfolio-weight-distribution-card"
+                    class="weight-distribution-card"
+                  >
+                    <h5 class="section-sub-title">
+                      Hight Sharpe (Recommended)
+                    </h5>
+                    <div class="flex-text-row">
+                      <div class="small-card">
+                        <h5>Return</h5>
+                        <h4>81.5%</h4>
+                      </div>
+                      <div class="small-card">
+                        <h5>Risk</h5>
+                        <h4>17.70%</h4>
+                      </div>
+                    </div>
+                    <div class="card">pi chart</div>
+                    <div class="flex-text-row">
+                      <h5>Minimum risk</h5>
+                      <h5>Highest return</h5>
+                    </div>
+                    <div class="flex-text-row">
+                      <div class="flex-text-row">
+                        <div class="small-card">
+                          <h6>Return</h6>
+                          <h4>3.2%</h4>
+                        </div>
+                        <div class="casmall-cardrd">
+                          <h6>Risk</h6>
+                          <h4>7.1%</h4>
+                        </div>
+                      </div>
+                      <div class="flex-text-row">
+                        <div class="small-card">
+                          <h6>Return</h6>
+                          <h4>20.5%</h4>
+                        </div>
+                        <div class="small-card">
+                          <h6>Risk</h6>
+                          <h4>35%</h4>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex-text-row">
+                      <div class="card">pi chart</div>
+                      <div class="card">pi chart</div>
+                    </div>
+                  </div>
+
+                  <div class="weight-distribution-card">
+                    <h5 class="section-sub-title">
+                      Hight Sharpe (Recommended)
+                    </h5>
+                    <div class="flex-text-row">
+                      <div class="small-card">
+                        <h5>Return</h5>
+                        <h4>81.5%</h4>
+                      </div>
+                      <div class="small-card">
+                        <h5>Risk</h5>
+                        <h4>17.70%</h4>
+                      </div>
+                    </div>
+                    <div class="card">pi chart</div>
+                    <div class="flex-text-row">
+                      <h5>Minimum risk</h5>
+                      <h5>Highest return</h5>
+                    </div>
+                    <div class="flex-text-row">
+                      <div class="flex-text-row">
+                        <div class="small-card">
+                          <h6>Return</h6>
+                          <h4>3.2%</h4>
+                        </div>
+                        <div class="small-card">
+                          <h6>Risk</h6>
+                          <h4>7.1%</h4>
+                        </div>
+                      </div>
+                      <div class="flex-text-row">
+                        <div class="small-card">
+                          <h6>Return</h6>
+                          <h4>20.5%</h4>
+                        </div>
+                        <div class="small-card">
+                          <h6>Risk</h6>
+                          <h4>35%</h4>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex-text-row">
+                      <div class="card">pi chart</div>
+                      <div class="card">pi chart</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Portfolio Cumulative section -->
+              <div class="portfolio-cumulative-section">
+                <div class="card-head">
+                  Portfolio Cumulative Returns over the last 3 Years
+                </div>
+                <div class="flex-text-row portfolio-cumulative-content">
+                  <div>
+                    <h5>Recommended Portfolio</h5>
+                    <div class="flex-text-row">
+                      <div class="small-card">
+                        <h6>investment Value</h6>
+                        <h4>$1000</h4>
+                      </div>
+                      <div class="small-card">
+                        <h6>Equal Weights</h6>
+                        <div class="flex-text-row">
+                          <h4>$1,637</h4>
+                          <h4 class="green-text">+63.7%</h4>
+                        </div>
+                      </div>
+                      <div class="small-card">
+                        <h6>Recommended Weights</h6>
+                        <div class="flex-text-row">
+                          <h4>$1,815</h4>
+                          <h4 class="green-text">+81.5%</h4>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <h5 class="stock-return green-text">Stock Returns</h5>
+                      <div class="card">chart</div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h5>User Portfolio</h5>
+                    <div class="flex-text-row">
+                      <div class="small-card">
+                        <h6>investment Value</h6>
+                        <h4>$1000</h4>
+                      </div>
+                      <div class="small-card">
+                        <h6>Equal Weights</h6>
+                        <div class="flex-text-row">
+                          <h4>$1,237</h4>
+                          <h4 class="green-text">+24.7%</h4>
+                        </div>
+                      </div>
+                      <div class="small-card">
+                        <h6>Recommended Weights</h6>
+                        <div class="flex-text-row">
+                          <h4>$1,429</h4>
+                          <h4 class="green-text">+42.5%</h4>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <h5 class="stock-return green-text">Stock Returns</h5>
+                      <div class="card">chart</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!--------------- End main -------------- -->
+
+      <!--------------- Start SideBar -------------- -->
+      <div class="sidebar-container">
+        <div class="logo">
+          <img src="./icons/Asset 9@4x 1.svg" alt="" />
+        </div>
+        <div class="totel-investment">
+          <h6>Total Investment</h6>
+          <h5 class="total-investment-rate">
+            <span> +18,10% </span>
+            <span class="arrow-icon">
+              <img src="./icons/Frame.svg" alt="" srcset="" />
+            </span>
+          </h5>
+          <h4>$5380,90 <i data-feather="eye-off" class="eye-icon"></i></h4>
+        </div>
+        <div class="mode">
+          <h6 class="light-mode">
+            <i data-feather="sun" class="light-icon"></i>
+            <span>Light</span>
+          </h6>
+          <h6 class="dark-mode">
+            <i data-feather="moon" class="dark-icon"></i>
+            <span>Dark</span>
+          </h6>
+        </div>
+
+        <div class="sidebar-van-container">
+          <div class="sidebar-up-nav-container">
+            <ul>
+              <li>
+                <a href="index.html">
+                  <img
+                    src="./icons/radix-icons_dashboard.svg"
+                    alt=""
+                    srcset=""
+                    class="sidebar-icon-size dashboard-icon-color"
+                  />
+                  <span> Dashboard</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img
+                    src="./icons/solar_graph-up-broken.svg"
+                    alt=""
+                    srcset=""
+                    class="sidebar-icon-size"
+                  />
+                  <div class="stock-prediction-select-container">
+                    <span class="stock-prediction-select">
+                      Stock Prediction
+                    </span>
+                    <img src="./icons/Polygon 1.svg" alt="" srcset="" />
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="stock-recommendation.html">
+                  <img
+                    src="./icons/ph_hand-coins.svg"
+                    alt=""
+                    srcset=""
+                    class="sidebar-icon-size"
+                  />
+                  <span> Stock Recommendation</span>
+                </a>
+              </li>
+              <li>
+                <a href="portfolio-optimization.html">
+                  <img
+                    src="./icons/fluent_wallet-16-regular.svg"
+                    alt=""
+                    srcset=""
+                    class="sidebar-icon-size"
+                  />
+                  <span> Portfolio Optimization</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img
+                    src="./icons/octicon_git-compare-24.svg"
+                    alt=""
+                    srcset=""
+                    class="sidebar-icon-size"
+                  />
+                  <span> Compare Portfolios</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="sidebar-bottom-nav-container">
+            <ul>
+              <li>
+                <a href="">
+                  <img
+                    src="./icons/heroicons-outline_newspaper.svg"
+                    alt=""
+                    srcset=""
+                    class="sidebar-icon-size"
+                  />
+                  <span> News</span>
+                </a>
+              </li>
+              <li>
+                <a href="" class="setting-container">
+                  <div class="setting-icon-text-box">
+                    <img
+                      src="./icons/ion_settings-outline.svg"
+                      alt=""
+                      srcset=""
+                      class="sidebar-icon-size"
+                    />
+                    <span>Settings</span>
+                  </div>
+                  <span class="setting-notification-count">6</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img
+                    src="./icons/fluent_call-24-regular.svg"
+                    alt=""
+                    srcset=""
+                    class="sidebar-icon-size"
+                  />
+                  <span> Support</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img
+                    src="./icons/solar_logout-linear.svg"
+                    alt=""
+                    srcset=""
+                    class="sidebar-icon-size"
+                  />
+                  <span> Logout</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--------------- End SideBar -------------- -->
+    </div>
+
+    <!-- feather icons script ------------ -->
+    <script>
+      feather.replace();
+    </script>
+    <script src="main.js"></script>
+  </body>
+</html>
