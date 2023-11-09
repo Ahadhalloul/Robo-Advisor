@@ -1666,7 +1666,7 @@ tr:not(:last-child) td {
 }
 
 /* hide portfolio weight distribution section  */
-.weight-distribution-card {
+.weight-distribution-card-container {
   display: none;
 }
 .show {
