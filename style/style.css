@@ -1682,11 +1682,11 @@ tr:not(:last-child) td {
   margin-bottom: 20px;
 }
 .small-card {
+  box-shadow: 0px 7px 30px 0px #00000012;
   padding: 10px;
   background-color: #fff;
   margin-top: 10px;
   border-radius: 10px;
-  box-shadow: 0px 12px 30px 0px #00000012;
 }
 .green-text {
   color: #6ab686;
