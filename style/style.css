@@ -1669,6 +1669,9 @@ tr:not(:last-child) td {
 .weight-distribution-card-container {
   display: none;
 }
+.min-hig-risk {
+  padding: 20px 0px;
+}
 .show {
   display: block;
 }
@@ -1698,7 +1701,8 @@ tr:not(:last-child) td {
 .portfolio-cumulative-section h5 {
   padding-left: 10px;
 }
-.portfolio-cumulative-content .flex-text-row {
-  gap: 7px;
+.portfolio-cumulative-content .flex-text-row,
+.weight-distribution-card .flex-text-row {
+  gap: 10px;
 }
 /* ----------- end  compare portfolios section-------------- */
