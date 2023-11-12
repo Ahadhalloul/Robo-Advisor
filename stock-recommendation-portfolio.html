@@ -66,12 +66,10 @@
           <div class="stock-recommendation-nav">
             <ul>
               <li>
-                <a class="focused" href="./stock-recommendation.html"
-                  >Stock Validation</a
-                >
+                <a href="./stock-recommendation.html">Stock Validation</a>
               </li>
               <li>
-                <a href="./stock-recommendation-portfolio.html"
+                <a class="focused" href="./stock-recommendation-portfolio.html"
                   >Recommend Portfolio</a
                 >
               </li>
@@ -83,42 +81,72 @@
             </ul>
           </div>
           <div class="card stock-recommendation-card">
-            <div class="card-head">
-              <div class="card-title">
-                <div>
-                  <img
-                    src="./icons/streamline_interface-validation-check-circle-green.svg"
-                    alt=""
-                  />
-                  Validation
-                </div>
-                <div class="flex-row date">
-                  <h6>Tue,23 Oct'23</h6>
-                  <img src="./icons/ion_calendar.svg" alt="" />
-                </div>
+            <div class="card-title card-head">
+              <div>
+                <img src="./icons/Group21.svg" alt="" />
+                Recommend Portfolio
               </div>
             </div>
-            <div class="validation-container">
-              <div class="choose-stock">
-                <label for=""
-                  >Choose stocks <span class="required-star">*</span>
-                </label>
-                <div class="input">
-                  <input type="text" name="" id="" placeholder="AAPL" />
-                  <div>
-                    <img src="./icons/search.svg" alt="" />
-                    <img src="./icons/arrow drop_down.svg" alt="" />
+            <div class="recommend-portfolio-container">
+              <div class="recommend-portfolio">
+                <div class="flex-row">
+                  <div class="input-container">
+                    <label for=""
+                      >Sector <span class="required-star">*</span>
+                    </label>
+                    <div class="input">
+                      <input
+                        type="text"
+                        name=""
+                        id=""
+                        placeholder="Technology"
+                      />
+                      <div>
+                        <img src="./icons/search.svg" alt="" />
+                        <img src="./icons/arrow drop_down.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="input-container">
+                    <label for=""
+                      >Risk <span class="required-star">*</span>
+                    </label>
+                    <div class="input">
+                      <input type="text" name="" id="" placeholder="30%" />
+                      <div>
+                        <img src="./icons/search.svg" alt="" />
+                        <img src="./icons/arrow drop_down.svg" alt="" />
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="stocks-list-container">
-                <ul class="stocks-list">
-                  <li>AAPL <img src="./icons/x.svg" alt="" /></li>
-                  <li>MSFT <img src="./icons/x.svg" alt="" /></li>
-                  <li>TSLA <img src="./icons/x.svg" alt="" /></li>
-                  <li>META <img src="./icons/x.svg" alt="" /></li>
-                  <li>GOOGL <img src="./icons/x.svg" alt="" /></li>
-                </ul>
+
+                <div class="flex-row">
+                  <div class="input-container">
+                    <label for=""
+                      >Region <span class="required-star">*</span>
+                    </label>
+                    <div class="input">
+                      <input type="text" name="" id="" placeholder="U.S" />
+                      <div>
+                        <img src="./icons/search.svg" alt="" />
+                        <img src="./icons/arrow drop_down.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="input-container">
+                    <label for=""
+                      >Market Cap <span class="required-star">*</span>
+                    </label>
+                    <div class="input">
+                      <input type="text" name="" id="" placeholder="All" />
+                      <div>
+                        <img src="./icons/search.svg" alt="" />
+                        <img src="./icons/arrow drop_down.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div class="buttons">
@@ -145,6 +173,7 @@
                       <th>Stock</th>
                       <th>Ticker</th>
                       <th>Score</th>
+                      <th>Risk</th>
                       <th>Explanation</th>
                     </thead>
                     <tbody>
@@ -152,21 +181,17 @@
                         <td>
                           <img
                             class="logo-img"
-                            src="./icons/apple.svg"
+                            src="./icons/logo-Meta 3.svg"
                             alt=""
                           />
                         </td>
-                        <td>AAPL</td>
-                        <td>3</td>
+                        <td>META</td>
+                        <td>4</td>
+                        <td>20%</td>
                         <td class="space-between">
                           <div>
-                            <img
-                              src="./icons/Vector-sad-face-gray.svg"
-                              alt=""
-                            />
-                            <span>
-                              Its risk to return is somehow acceptable
-                            </span>
+                            <img src="./icons/SMILE-FACE-GREEN.svg" alt="" />
+                            <span> Its risk to return is very acceptable </span>
                           </div>
                           <div class="info-container">
                             <img
@@ -181,9 +206,9 @@
                               neutral']
                             </div>
                           </div>
+                          </div>
                         </td>
                       </tr>
-
                       <tr>
                         <td>
                           <img
@@ -194,10 +219,11 @@
                         </td>
                         <td>MSFT</td>
                         <td>4</td>
+                        <td>20%</td>
                         <td class="space-between">
                           <div>
                             <img src="./icons/SMILE-FACE-GREEN.svg" alt="" />
-                            <span> The stock is uptrend </span>
+                            <span> Its risk to return is very acceptable</span>
                           </div>
                           <img src="./icons/vector9.svg" alt="" />
                         </td>
@@ -207,59 +233,17 @@
                         <td>
                           <img
                             class="logo-img"
-                            src="./icons/tesla_logo_icon_181279 1.svg"
+                            src="./icons/Dell_Logo 1.svg"
                             alt=""
                           />
                         </td>
-                        <td>TSLA</td>
-                        <td>3</td>
+                        <td>DELL</td>
+                        <td>5</td>
+                        <td>20%</td>
                         <td class="space-between">
                           <div>
                             <img src="./icons/SMILE-FACE-GREEN.svg" alt="" />
-                            <span>
-                              The stock is trying to rise from being downtrend
-                            </span>
-                          </div>
-                          <img src="./icons/vector9.svg" alt="" />
-                        </td>
-                      </tr>
-
-                      <tr>
-                        <td>
-                          <img
-                            class="logo-img"
-                            src="./icons/google-logo-28FA7991AF-seeklogo 1.svg"
-                            alt=""
-                          />
-                        </td>
-                        <td>GOOGL</td>
-                        <td>3</td>
-                        <td class="space-between">
-                          <div>
-                            <img
-                              src="./icons/Vector-sad-face-gray.svg"
-                              alt=""
-                            />
-                            <span> The stock trend is changing </span>
-                          </div>
-                          <img src="./icons/vector9.svg" alt="" />
-                        </td>
-                      </tr>
-
-                      <tr>
-                        <td>
-                          <img
-                            class="logo-img"
-                            src="./icons/logo-Meta 3.svg"
-                            alt=""
-                          />
-                        </td>
-                        <td>META</td>
-                        <td>4</td>
-                        <td class="space-between">
-                          <div>
-                            <img src="./icons/SMILE-FACE-GREEN.svg" alt="" />
-                            <span> Its risk to return is very acceptable </span>
+                            <span> Its risk to return is very acceptable</span>
                           </div>
                           <img src="./icons/vector9.svg" alt="" />
                         </td>

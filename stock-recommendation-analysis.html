@@ -66,9 +66,7 @@
           <div class="stock-recommendation-nav">
             <ul>
               <li>
-                <a class="focused" href="./stock-recommendation.html"
-                  >Stock Validation</a
-                >
+                <a href="./stock-recommendation.html">Stock Validation</a>
               </li>
               <li>
                 <a href="./stock-recommendation-portfolio.html"
@@ -76,200 +74,144 @@
                 >
               </li>
               <li>
-                <a href="/stock-recommendation-analysis.html"
+                <a class="focused" href="/stock-recommendation-analysis.html"
                   >Recommend Portfolio Analysis</a
                 >
               </li>
             </ul>
           </div>
-          <div class="card stock-recommendation-card">
-            <div class="card-head">
-              <div class="card-title">
-                <div>
-                  <img
-                    src="./icons/streamline_interface-validation-check-circle-green.svg"
-                    alt=""
-                  />
-                  Validation
-                </div>
-                <div class="flex-row date">
-                  <h6>Tue,23 Oct'23</h6>
-                  <img src="./icons/ion_calendar.svg" alt="" />
-                </div>
-              </div>
+          <!-- start portfolio analysis card -->
+          <div class="card portfolio-analysis-card">
+            <div class="card-head card-title">
+              <img src="./icons/Vector8.svg" alt="" />
+              <h4>Portfolio Analysis</h4>
             </div>
-            <div class="validation-container">
-              <div class="choose-stock">
-                <label for=""
-                  >Choose stocks <span class="required-star">*</span>
-                </label>
-                <div class="input">
-                  <input type="text" name="" id="" placeholder="AAPL" />
-                  <div>
-                    <img src="./icons/search.svg" alt="" />
-                    <img src="./icons/arrow drop_down.svg" alt="" />
-                  </div>
+            <div class="portfolios-container flex-row">
+              <div class="portfolio-content">
+                <div class="sub-title">
+                  <h5>Recommended Portfolio</h5>
+                  <h6 class="date">
+                    Tue,23 Oct'23<img src="./icons/ion_calendar.svg" alt="" />
+                  </h6>
                 </div>
-              </div>
-              <div class="stocks-list-container">
-                <ul class="stocks-list">
-                  <li>AAPL <img src="./icons/x.svg" alt="" /></li>
-                  <li>MSFT <img src="./icons/x.svg" alt="" /></li>
-                  <li>TSLA <img src="./icons/x.svg" alt="" /></li>
-                  <li>META <img src="./icons/x.svg" alt="" /></li>
-                  <li>GOOGL <img src="./icons/x.svg" alt="" /></li>
-                </ul>
+                <h6 class="green-text">Performance %</h6>
+                <div class="chart-box">here chart</div>
               </div>
 
-              <div class="buttons">
-                <button class="cancle-btn">Cancel</button>
-                <button class="submit-button">
-                  Submit
-                  <span>
-                    <i class="right-arrow-icon" data-feather="arrow-right"></i>
-                  </span>
-                </button>
+              <div class="portfolio-content">
+                <div class="sub-title">
+                  <h5>User Portfolio</h5>
+                  <h6 class="date">
+                    Tue,23 Oct'23<img src="./icons/ion_calendar.svg" alt="" />
+                  </h6>
+                </div>
+                <h6 class="green-text">Performance %</h6>
+                <div class="chart-box">here chart</div>
               </div>
             </div>
+          </div>
+          <!-- end portfolio analysis card -->
+          <!-- start advanced details card -->
+          <div class="card advanced-details-card">
+            <div class="card-title">
+              <div class="flex-row">
+                <img src="./icons/entypo_light-up.svg" alt="" />
+                <h4>Advances Details</h4>
+              </div>
+              <img
+                id="hideArrow"
+                onclick="hideAdvanced()"
+                src="./icons/Vector-arrow-down.svg"
+                alt=""
+              />
+              <img
+                id="showArrow"
+                onclick="showAdvanced()"
+                src="./icons/Frame9.svg"
+                alt=""
+                class="hide"
+              />
+            </div>
 
-            <div class="validation-result-container">
-              <div class="card-head">
-                <div class="card-title">
-                  <div>
-                    <img src="./icons/Vector32.svg" alt="" /> Validation Result
+            <div class="advanced-details-content">
+              <h4>Beta Of Assets Compared to Index</h4>
+
+              <div class="flex-row">
+                <div class="recommended-portfolio-content">
+                  <div class="sub-title flex-row">
+                    <h5>Recommended Portfolio</h5>
+                    <h6 class="date">
+                      Tue,23 Oct'23<img src="./icons/ion_calendar.svg" alt="" />
+                    </h6>
                   </div>
-                </div>
-                <div class="validation-table">
-                  <table>
-                    <thead>
-                      <th>Stock</th>
-                      <th>Ticker</th>
-                      <th>Score</th>
-                      <th>Explanation</th>
-                    </thead>
-                    <tbody>
+                  <div class="table-container">
+                    <table>
                       <tr>
-                        <td>
-                          <img
-                            class="logo-img"
-                            src="./icons/apple.svg"
-                            alt=""
-                          />
-                        </td>
+                        <th>Assest</th>
                         <td>AAPL</td>
-                        <td>3</td>
-                        <td class="space-between">
-                          <div>
-                            <img
-                              src="./icons/Vector-sad-face-gray.svg"
-                              alt=""
-                            />
-                            <span>
-                              Its risk to return is somehow acceptable
-                            </span>
-                          </div>
-                          <div class="info-container">
-                            <img
-                              id="info-icon"
-                              src="./icons/vector9.svg"
-                              alt=""
-                              onclick="toggleInfoBlock()"
-                            />
-                            <div class="info-block hide" id="info-block">
-                              ['The stock trend is changing', 'its risk to
-                              return is somehow acceptable ', 'The news is
-                              neutral']
-                            </div>
-                          </div>
-                        </td>
+                        <td>ORCL</td>
+                        <td>NVDA</td>
                       </tr>
-
                       <tr>
-                        <td>
-                          <img
-                            class="logo-img"
-                            src="./icons/microsoft.svg"
-                            alt=""
-                          />
-                        </td>
-                        <td>MSFT</td>
-                        <td>4</td>
-                        <td class="space-between">
-                          <div>
-                            <img src="./icons/SMILE-FACE-GREEN.svg" alt="" />
-                            <span> The stock is uptrend </span>
-                          </div>
-                          <img src="./icons/vector9.svg" alt="" />
-                        </td>
+                        <th>Beta</th>
+                        <td>10.96%</td>
+                        <td>19.03%</td>
+                        <td>11.19%</td>
                       </tr>
+                    </table>
+                  </div>
+                </div>
 
+                <!-- right section  -->
+                <div class="user-portfolio-content">
+                  <div class="sub-title flex-row">
+                    <h5>User Portfolio</h5>
+                    <h6 class="date">
+                      Tue,23 Oct'23<img src="./icons/ion_calendar.svg" alt="" />
+                    </h6>
+                  </div>
+                  <div class="table-container">
+                    <table>
                       <tr>
-                        <td>
-                          <img
-                            class="logo-img"
-                            src="./icons/tesla_logo_icon_181279 1.svg"
-                            alt=""
-                          />
-                        </td>
-                        <td>TSLA</td>
-                        <td>3</td>
-                        <td class="space-between">
-                          <div>
-                            <img src="./icons/SMILE-FACE-GREEN.svg" alt="" />
-                            <span>
-                              The stock is trying to rise from being downtrend
-                            </span>
-                          </div>
-                          <img src="./icons/vector9.svg" alt="" />
-                        </td>
-                      </tr>
-
-                      <tr>
-                        <td>
-                          <img
-                            class="logo-img"
-                            src="./icons/google-logo-28FA7991AF-seeklogo 1.svg"
-                            alt=""
-                          />
-                        </td>
+                        <th>Assest</th>
+                        <td>AAPL</td>
                         <td>GOOGL</td>
-                        <td>3</td>
-                        <td class="space-between">
-                          <div>
-                            <img
-                              src="./icons/Vector-sad-face-gray.svg"
-                              alt=""
-                            />
-                            <span> The stock trend is changing </span>
-                          </div>
-                          <img src="./icons/vector9.svg" alt="" />
-                        </td>
-                      </tr>
-
-                      <tr>
-                        <td>
-                          <img
-                            class="logo-img"
-                            src="./icons/logo-Meta 3.svg"
-                            alt=""
-                          />
-                        </td>
                         <td>META</td>
-                        <td>4</td>
-                        <td class="space-between">
-                          <div>
-                            <img src="./icons/SMILE-FACE-GREEN.svg" alt="" />
-                            <span> Its risk to return is very acceptable </span>
-                          </div>
-                          <img src="./icons/vector9.svg" alt="" />
-                        </td>
+                        <td>MSFT</td>
+                        <td>TSLA</td>
                       </tr>
-                    </tbody>
-                  </table>
+                      <tr>
+                        <th>Beta</th>
+                        <td>-10.96%</td>
+                        <td>-1.19%</td>
+                        <td>-31.34%</td>
+                        <td>-0.33%</td>
+                        <td>-14.22%</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+              <div class="correlation-assets">
+                <div class="title">
+                  <h5>Correlation of Assets</h5>
+                </div>
+                <div class="flex-row">
+                  <div>
+                    <h5 class="sub-title">Recommended Portfolio</h5>
+                    <div class="chart-box">here chart</div>
+                  </div>
+
+                  <div>
+                    <h5 class="sub-title">User Portfolio</h5>
+                    <div class="chart-box">here chart</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <!-- end advanced details card -->
         </div>
       </main>
       <!--------------- End main -------------- -->
