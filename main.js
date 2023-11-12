@@ -6,24 +6,13 @@ function hideShowAdvancedDetail() {
   showArrow.classList.toggle("show-arrow");
 }
 
-// let tickerTable = document.getElementById("ticker-data");
-// let tickerRow = document.createElement("tr");
-// let tickerData = document.createElement("td");
-// function addTicker() {
-//   tickerRow.appendChild(tickerData);
-//   tickerTable.appendChild(tickerRow);
-//   console.log(tickerRow);
-//   console.log(tickerTable);
-// }
-
+// ------show and hide portfolio weight distrubtion section ----------
 let portfolioWeightDistributionCard = document.getElementById(
   "portfolio-weight-distribution-card"
 );
-
 let showSectionArrow = document.getElementById(
   "weights-distribution-arrow-down"
 );
-
 let hideSectionArrow = document.getElementById("weights-distribution-arrow-up");
 
 function showSection() {

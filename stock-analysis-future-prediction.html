@@ -65,7 +65,7 @@
         <div class="contant-container">
           <div class="stock-analysis-nav">
             <ul>
-              <li><a href="#">Stock Investigation</a></li>
+              <li><a href="stock-analysis.html">Stock Analysis</a></li>
               <li><a href="#">Hypothetical Investment</a></li>
               <li><a class="focused" href="#">Future Prediction</a></li>
             </ul>
@@ -75,13 +75,15 @@
             <div class="model">
               <h3>Model <span class="required-star">*</span></h3>
               <div class="model-btns">
-                <div class="switch-btn-bg">
+                <!-- <div class="switch-btn-bg">
                   <div class="on"></div>
-                </div>
+                </div> -->
+                <input type="checkbox" checked id="check1" />
+                <label for="check1" class="checkbox-button"></label>
                 <label class="model-label" for="">Statistical</label>
-                <div class="switch-btn-bg">
-                  <div class="off"></div>
-                </div>
+
+                <input type="checkbox" checked id="check2" />
+                <label for="check2" class="checkbox-button"></label>
                 <label class="model-label" for="">All</label>
               </div>
             </div>
@@ -197,30 +199,25 @@
           <div class="sidebar-up-nav-container">
             <ul>
               <li>
-                <a href="index.html">
+                <a href="#">
                   <img
                     src="./icons/radix-icons_dashboard.svg"
                     alt=""
                     srcset=""
-                    class="sidebar-icon-size dashboard-icon-color"
+                    class="sidebar-icon-size"
                   />
                   <span> Dashboard</span>
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="stock-analysis.html">
                   <img
                     src="./icons/solar_graph-up-broken.svg"
                     alt=""
                     srcset=""
                     class="sidebar-icon-size"
                   />
-                  <div class="stock-prediction-select-container">
-                    <span class="stock-prediction-select">
-                      Stock Prediction
-                    </span>
-                    <img src="./icons/Polygon 1.svg" alt="" srcset="" />
-                  </div>
+                  <span> Stock Analysis </span>
                 </a>
               </li>
               <li>
@@ -246,7 +243,7 @@
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="compare-portfolios.html">
                   <img
                     src="./icons/octicon_git-compare-24.svg"
                     alt=""

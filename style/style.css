@@ -415,8 +415,6 @@ ul li {
 /* ----------- End Dashboard section -------------- */
 
 /*---------------------------- */
-/* ----------- Start stock prediction section-------------- */
-/* ----------- End stock prediction section-------------- */
 
 /*---------------------------- */
 /* ----------- Start stock recommendation section -------------- */
@@ -761,6 +759,25 @@ input::-webkit-outer-spin-button {
   background-color: white;
   border-radius: 2px;
 }
+
+.stock-sector-container input:checked {
+  background-color: #0000ff;
+  border-radius: 3px;
+  position: relative;
+}
+.stock-sector-container input:checked::before {
+  content: "✔";
+  position: absolute;
+  left: -2px;
+  top: -1px;
+  width: 14px;
+  height: 14px;
+  text-align: center;
+  color: #fff;
+  font-size: 8px;
+  font-weight: 200;
+}
+
 .stock-sector-container input,
 .stock-sector-container label {
   vertical-align: middle;
@@ -926,8 +943,6 @@ tr:not(:last-child) td {
 /* ----------- End portfolio optimization section-------------- */
 
 /*---------------------------- */
-/* ----------- Start compare portfolio section-------------- */
-/* ----------- End compare portfolio section-------------- */
 
 /* ----------- Start  stock analysis (future prediction nav)  section-------------- */
 .card {
@@ -1002,6 +1017,38 @@ tr:not(:last-child) td {
   background-color: #242424;
   margin-top: -2px;
 }
+
+.contant-container .checkbox-button {
+  height: 17px;
+  width: 42px;
+  background-color: #dadee3;
+  border-radius: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 7px;
+  position: relative;
+}
+.contant-container .checkbox-button::before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  background-color: #242424;
+  margin-top: -2px;
+}
+.contant-container input:checked + .checkbox-button::before {
+  background-color: #0000ff;
+  box-sizing: content-box;
+  border: 8px solid #b7bfeb;
+  margin-top: -9px;
+  margin-left: 9px;
+}
+.contant-container #check1,
+.contant-container #check2 {
+  display: none;
+}
+
 .future-prediction-inputs-container {
   font-weight: 500;
   display: flex;
@@ -1443,6 +1490,7 @@ tr:not(:last-child) td {
   margin-left: 4px;
 }
 /* ----------- end  stock analysis (stock analysis nav) section-------------- */
+/* ---------------------------------------------------------- */
 /* ----------- start  compare portfolios section-------------- */
 .choose-portfolio-card {
   padding-bottom: 10px;
@@ -1665,13 +1713,24 @@ tr:not(:last-child) td {
   position: absolute;
   right: 10px;
   /* display: none; */
+  cursor: pointer;
 }
 
 .weight-distribution-container .arrow-down {
   width: 15px !important;
   position: absolute;
   right: 10px;
+  cursor: pointer;
 }
+
+.currency,
+.user-down-arrow,
+.input img,
+.arrow-down:hover,
+.arrow-up:hover {
+  cursor: pointer;
+}
+
 /* hide portfolio weight distribution section  */
 .weight-distribution-card-container {
   display: none;
@@ -1716,3 +1775,6 @@ tr:not(:last-child) td {
   gap: 10px;
 }
 /* ----------- end  compare portfolios section-------------- */
+/* -------------------------------------------------------------- */
+/* ----------- start    section-------------- */
+/* ----------- end   section-------------- */
