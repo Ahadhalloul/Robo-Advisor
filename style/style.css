@@ -2299,8 +2299,8 @@ tr:not(:last-child) td {
 }
 
 .latest-news-content .card {
+  margin: 25px 0px 10px;
   box-shadow: 0px 2px 6px 0px #00000038;
-  margin: 25px 0px;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -2339,6 +2339,10 @@ tr:not(:last-child) td {
   margin-top: 15px;
   border-top: 1px solid #f0f0f0;
   color: #9a9ea0;
+}
+.latest-news-content .card > img {
+  width: 70px;
+  border-radius: 5px;
 }
 .latest-news-content .card .card-footer img {
   vertical-align: bottom;
