@@ -1599,12 +1599,30 @@ tr:not(:last-child) td {
   width: 38px;
   height: 38px;
 }
+
 .watch-list input {
   appearance: none;
+  border: 1px solid var(--light-gray);
+  background-color: white;
   border-radius: 2px;
 }
+
 .watch-list input:checked {
-  background-color: #9b9b9b;
+  background-color: #0000ff;
+  border-radius: 3px;
+  position: relative;
+}
+.watch-list input:checked::before {
+  content: "✔";
+  position: absolute;
+  left: -2px;
+  top: -1px;
+  width: 14px;
+  height: 14px;
+  text-align: center;
+  color: #fff;
+  font-size: 8px;
+  font-weight: 200;
 }
 
 .watch-list .spot-img {
