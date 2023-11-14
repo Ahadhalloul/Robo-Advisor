@@ -1,0 +1,714 @@
+:root {
+}
+
+body.dark {
+  color: #fff;
+}
+/* ------------------------------------- */
+/* ------------------ start header ---------------- */
+body.dark .header-container {
+  background-color: #242424;
+  color: white;
+}
+
+body.dark .search-container {
+  background-color: #000;
+}
+body.dark .setting-notification-count {
+  border: 1px solid red;
+}
+body.dark .search-container .search-bar {
+  background-color: #000;
+}
+body.dark .search-container input::placeholder {
+  color: #959798;
+}
+body.dark .search-container .search-icon {
+  color: #959798;
+}
+
+body.dark .line {
+  background-color: #fff;
+}
+
+body.dark .notify-icon {
+  width: 30px;
+  height: 30px;
+}
+
+body.dark .messege-icon-container img {
+  filter: invert(100%);
+  -webkit-filter: invert(100%); /* Safari/Chrome */
+}
+body.dark .user-down-arrow {
+  width: 18px;
+  height: 18px;
+  margin-left: 5px;
+  filter: invert(100%);
+  -webkit-filter: invert(100%); /* Safari/Chrome */
+}
+body.dark .currency {
+  min-width: 67px;
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+}
+body.dark .currency select {
+  color: #fff;
+  background-color: #242424;
+}
+body.dark .currency img {
+  width: 10px;
+  height: 10px;
+  filter: invert(100%);
+  -webkit-filter: invert(100%); /* Safari/Chrome */
+}
+
+/*---------------------------- */
+/* ---------- Start sideBar ----------------------- */
+body.dark .sidebar-container {
+  background: linear-gradient(180deg, #282828 0%, #000000 100%),
+    linear-gradient(0deg, #000000, #000000);
+}
+body.dark .sidebar-bottom-nav-container {
+  border-top: 1px solid #595961;
+}
+body.dark .sidebar-container {
+  border-right: 1px solid #000;
+}
+body.dark .sidebar-van-container ul li a {
+  color: #fff;
+}
+body.dark .light-mode {
+  background-color: #000;
+  color: #fff;
+}
+body.dark .dark-mode {
+  background-color: #fff;
+  color: #000;
+}
+body.dark .sidebar-icon-size {
+  width: 20px;
+  height: 20px;
+  filter: contrast(0);
+}
+
+body.dark .logo {
+  filter: invert(30%);
+}
+body.dark .blue-icon {
+  filter: none;
+}
+/*---------------------------- */
+/* ---------- Start main ------------ */
+body.dark .main-container {
+  background-color: #121212;
+}
+
+body.dark .card {
+  background-color: #242424;
+}
+body.dark .card-head {
+  border-bottom: 1px solid #414141;
+}
+
+/*---------------------------- */
+/* ----------- Start portfolio optimization section-------------- */
+
+body.dark .welcome-card {
+  background: linear-gradient(180deg, #242424 0%, rgba(0, 0, 0, 0.19) 100%);
+  box-shadow: 0px 10px 50px 0px #4a4a4a40 !important;
+}
+
+body.dark .level-card-title {
+  border-bottom: 1px solid #414141;
+}
+body.dark .level-card-title h6 {
+  color: #595961;
+}
+
+body.dark .level-card {
+  box-shadow: 0px 12px 30px 0px #00000012;
+}
+body.dark .level-card p {
+  color: #595961;
+}
+
+body.dark .level-card button {
+  border: none;
+  background: linear-gradient(90deg, #1ed760 0%, #0000ff 100%);
+  color: white;
+}
+body.dark .expert-tag {
+  border: 1px solid #3da864;
+  color: #3da864;
+}
+body.dark .beginner-tag {
+  border: 1px solid #fff;
+  color: #fff;
+}
+body.dark .intermediat-tag {
+  border: 1px solid #62bad6;
+  color: #62bad6;
+}
+/* ------------------------- */
+
+body.dark .risk-tolerance label {
+  color: #777777;
+}
+
+body.dark input {
+  border: 1px #777777 solid;
+  background-color: #121212;
+}
+
+body.dark input::placeholder {
+  color: #777777;
+}
+body.dark .advances-details {
+  border: 1px solid #414141;
+  background-color: #121212;
+}
+
+body.dark .advandes-details-title {
+  border-bottom: 1px solid #414141;
+}
+
+body.dark .advances-details .up-arrow {
+  filter: invert(50%);
+}
+
+body.dark .add-ticker {
+  background: linear-gradient(180deg, #000000 0%, #121212 100%);
+  border: 1px solid #777777;
+}
+
+body.dark .portfolio-assets-table .search-icon {
+  color: #858c94 !important;
+}
+
+body.dark .potrfolio-assets-lable {
+  color: #777777;
+}
+
+body.dark .portfolio-assets-table {
+  border: 1px solid #414141;
+}
+body.dark .portfolio-assets-table thead {
+  background-color: #000;
+}
+body.dark .portfolio-assets-table .input-container {
+  border: 1px solid #414141;
+}
+body.dark tr:not(:last-child) td {
+  border-bottom: 1px solid #414141 !important;
+}
+
+body.dark .advanced-details-buttons-container {
+  padding: 20px 0px;
+  border-bottom: 1px solid #414141;
+  width: 100%;
+}
+
+body.dark .stock-sector-grid {
+  border-bottom: 1px solid #414141;
+}
+body.dark .stock-sector-container {
+  background-color: #121212;
+  color: #777777;
+}
+
+body.dark .stock-sector-container label {
+  font-weight: 300;
+  color: #fff;
+}
+body.dark .stock-sector-container input {
+  background-color: white;
+}
+
+body.dark .stock-sector-container input:checked {
+  background-color: #1ed760;
+  border: 1px solid #1ed760;
+}
+
+body.dark .advanced-details-button1 {
+  color: #fff;
+  border: 1px solid #777777;
+  background-color: #242424;
+}
+body.dark .advanced-details-button2 {
+  border: none;
+}
+
+/* -------summary section ---- */
+
+body.dark .summary-title {
+  border-bottom: 1px solid #414141;
+}
+body.dark .summary-title-content {
+  border-bottom: 2px solid #1ed760;
+  color: #1ed760;
+}
+
+body.dark .summary-assets-table {
+  border: 1px solid #414141;
+  background-color: #121212;
+}
+body.dark .check-circle-icon {
+  filter: contrast(0);
+}
+body.dark .summary-assets-table thead {
+  background-color: #000;
+  color: #fff;
+}
+
+body.dark .expected-returns {
+  background-color: #121212;
+  color: #fff;
+}
+
+body.dark .expected-returns-percent {
+  background-color: #242424;
+}
+
+body.dark .best-performing-title {
+  border-bottom: 1px solid #414141;
+}
+body.dark .best-performing-cards-container {
+  border-bottom: 1px solid #414141;
+}
+body.dark .card-content {
+  background-color: #121212;
+}
+
+body.dark .best-performing-cards-container .rate {
+  color: #6ab686;
+}
+
+/* ----------- End portfolio optimization section-------------- */
+
+/*---------------------------- */
+
+/* ----------- Start  stock analysis (future prediction nav)  section-------------- */
+body.dark .card {
+  box-shadow: 0px 10px 50px 0px #00000012;
+}
+
+body.dark .stock-analysis-nav ul li a {
+  border-bottom: 1px solid #dadee3;
+  color: #fff;
+}
+
+body.dark .stock-analysis-nav ul li a:hover {
+  border-bottom: 1px solid #1ed760;
+  color: #1ed760;
+}
+body.dark .focused {
+  color: #1ed760 !important;
+  border-bottom: 1px solid #1ed760 !important;
+}
+
+body.dark .contant-container .checkbox-button {
+  background-color: #000;
+}
+body.dark .contant-container .checkbox-button::before {
+  background-color: #777777;
+}
+body.dark .contant-container input:checked + .checkbox-button::before {
+  background-color: #1ed760;
+  border: 8px solid #b9ffd280;
+}
+
+body.dark .future-prediction-inputs-container .input {
+  border: 1px solid #858c94;
+  background-color: #121212;
+}
+
+body.dark .submit-button {
+  border: none;
+}
+
+body.dark .convedence-level-rate-box {
+  background-color: #121212;
+  color: #fff;
+}
+
+body.dark .convedence-level-rate-box h4 {
+  background-color: #272727;
+}
+
+/* ----------- End  stock analysis (future prediction nav) section -------------- */
+
+/* ----------- start stock analysis (stock analysis nav) section-------------- */
+
+body.dark .chart-header {
+  color: #fff;
+}
+
+body.dark .select-aapl select {
+  color: #fff;
+  background-color: #242424;
+}
+
+body.dark .watch-list-title img {
+  filter: contrast(0);
+}
+
+body.dark .watch-list-content {
+  border-bottom: 1px solid #414141;
+}
+body.dark .watch-list-content h4 {
+  color: #777777;
+}
+body.dark .watch-list-content h3 {
+  color: #fff;
+}
+
+body.dark .watch-list input {
+  appearance: none;
+  background-color: #282828;
+}
+body.dark .watch-list input:checked {
+  background-color: #1ed760;
+}
+
+body.dark .apple-header {
+  border-bottom: 1px solid #414141;
+}
+
+body.dark .apple-value-sec {
+  border-bottom: 1px solid #414141;
+}
+
+body.dark .related-news-content {
+  background-color: #121212;
+}
+
+body.dark .red-more {
+  color: #3da864;
+}
+body.dark .red-more img {
+  width: 18px;
+}
+
+/* chart box  */
+body.dark .analysis-chart-box {
+  height: 450px;
+  position: relative;
+}
+body.dark .analysis-chart-box .chart-popup {
+  background-color: #121212;
+  border-left: 4px solid #1ed760;
+}
+
+body.dark .chart-popup .chart-popup-taps img {
+  filter: contrast(0);
+}
+body.dark .chart-popup .chart-popup-taps a {
+  color: #fff;
+}
+
+body.dark .chart-popup .popup-bg {
+  background-color: #272727;
+}
+
+body.dark .chart-popup .popup-content p {
+  color: #fff;
+}
+
+body.dark .chart-popup .more-news {
+  color: #777777;
+}
+body.dark .chart-popup .more-news img {
+  filter: contrast(0);
+}
+/* ----------- end  stock analysis (stock analysis nav) section-------------- */
+/* ---------------------------------------------------------- */
+/* ----------- start  compare portfolios section-------------- */
+
+body.dark .inputs-container .input {
+  background-color: #121212;
+}
+body.dark .inputs-container input {
+  border: none;
+}
+body.dark .input-content h6 {
+  font-size: 11px;
+  font-weight: 400;
+  margin-top: 5px;
+  color: #777777;
+}
+body.dark .input-content label {
+  color: #777777;
+}
+
+body.dark .cancle-btn {
+  background-color: #242424;
+  color: #fff;
+}
+
+body.dark .tabs ul li a {
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+
+body.dark .tabs ul li a:hover {
+  border-bottom: 1px solid #1ed760;
+  color: #1ed760;
+}
+
+body.dark .checkmark-icon:after {
+  color: #000;
+}
+
+body.dark .focused .checkmark-icon:after,
+body.dark .tabs ul li a:hover .checkmark-icon:after {
+  background: #1ed760;
+}
+
+body.dark .weight-style-input h5 {
+  color: #777777;
+}
+
+body.dark .weight-style-input input {
+  appearance: none;
+}
+body.dark .weight-style-input input:checked {
+  border: 3px solid #1ed760;
+  background-color: #aeebc3;
+}
+
+body.dark .risk-return-content .risk-return-chart {
+  background-color: #121212;
+  border-radius: 3px;
+  box-shadow: 0px 12px 30px 0px #00000012;
+}
+
+body.dark .weight-distribution-container {
+  background-color: #121212;
+}
+
+body.dark .weight-distribution-container .section-title img {
+  filter: contrast(0);
+}
+
+body.dark .small-card {
+  box-shadow: 0px 7px 30px 0px #00000012;
+  padding: 10px;
+  background-color: #121212;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+body.dark .green-text {
+  color: #1ed760;
+}
+
+body.dark .portfolio-cumulative-content .card {
+  background-color: #121212;
+  border-radius: 5px;
+}
+/* ----------- end  compare portfolios section-------------- */
+/* -------------------------------------------------------------- */
+
+/* ----------- Start stock recommendation section -------------- */
+
+body.dark .stock-recommendation-nav ul li a:hover {
+  border-bottom: 1px solid #1ed760;
+  color: #1ed760;
+}
+
+body.dark .stock-recommendation-card .card-title img {
+  margin-right: 3px;
+}
+
+body.dark .stock-recommendation-card .date {
+  color: #fff;
+}
+body.dark .stock-recommendation-card .date img {
+  filter: contrast(0);
+}
+
+body.dark .stock-recommendation-card .choose-stock label {
+  color: #7a7a7a;
+}
+body.dark .stock-recommendation-card .choose-stock .input {
+  background-color: #121212;
+}
+
+body.dark .stocks-list-container {
+  background-color: #121212;
+}
+
+body.dark .stocks-list li {
+  background-color: #3c3b3b;
+}
+
+body.dark .validation-container {
+  border-bottom: 1px solid #414141;
+}
+
+body.dark .validation-table table {
+  border: 1px solid #414141;
+}
+
+body.dark .validation-table table thead th {
+  border-bottom: 1px solid #414141;
+}
+
+body.dark .validation-table tbody td {
+  border: none !important;
+}
+
+/* information block style */
+
+body.dark .info-block {
+  color: #000;
+}
+
+body.dark .stock-recommendation-card .recommend-portfolio label {
+  color: #777777;
+}
+
+body.dark .stock-recommendation-card .recommend-portfolio .input {
+  border: 1px solid #858c94;
+  background-color: #121212;
+}
+
+body.dark .recommend-portfolio-container {
+  border-bottom: 1px solid #414141;
+}
+body.dark .portfolio-analysis-card > div img {
+  /* filter: contrast(0); */
+}
+body.dark .portfolio-content .sub-title img {
+  filter: contrast(0);
+}
+body.dark .chart-box {
+  background-color: #121212;
+  border-radius: 3px;
+}
+
+body.dark .advanced-details-card .card-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body.dark .advanced-details-card .card-title img:not(:first-child) {
+  filter: contrast(0);
+}
+
+body.dark .advanced-details-content {
+  border-top: 1px solid #414141;
+}
+body.dark .advanced-details-content .sub-title img {
+  filter: contrast(0);
+}
+
+body.dark .portfolios-container .date,
+body.dark .advanced-details-content .date {
+  color: #777777;
+}
+
+body.dark .advanced-details-content .table-container {
+  background-color: #121212;
+  border: 1px solid #1ed760;
+}
+body.dark .advanced-details-content .table-container table {
+  border-radius: 5px;
+  border: 1px solid #1ed760;
+}
+body.dark .advanced-details-content .table-container table th {
+  border: 1px solid #1ed760;
+  background-color: #f9f9f9;
+  color: #000;
+}
+body.dark .advanced-details-content .table-container table td {
+  background-color: #242424;
+  border: 1px solid #1ed760;
+}
+body.dark .advanced-details-content .table-container table tr:first-child td {
+  color: #fff;
+}
+body.dark .user-portfolio-content .table-container {
+  background-color: #121212;
+  border: none;
+}
+body.dark .user-portfolio-content .table-container table {
+  border: 1px solid #414141;
+}
+body.dark .user-portfolio-content .table-container table th {
+  border: 1px solid #414141;
+  background-color: #f9f9f9;
+}
+body.dark .user-portfolio-content .table-container table td {
+  border: 1px solid #414141;
+}
+
+/* ----------- End stock recommendation section-------------- */
+
+/* --------------------------------------- */
+/* -----------Start news section-------------- */
+
+/* hero news card  */
+
+body.dark .news-hero-card {
+  background: linear-gradient(
+    180deg,
+    #272727 0%,
+    rgba(39, 39, 39, 0.01) 113.64%
+  );
+  box-shadow: 0px 10px 50px 0px #00000012;
+}
+
+body.dark .news-hero-content a {
+  color: #1ed760;
+}
+body.dark .news-hero-content a img {
+  filter: contrast(0);
+}
+
+/* top news card  */
+body.dark .top-news .title a {
+  color: #1ed760;
+}
+body.dark .top-news .title a img {
+  filter: contrast(0);
+}
+body.dark .top-news .card {
+  background-color: #121212;
+}
+body.dark .top-news-content h6 {
+  color: #777777;
+}
+body.dark .top-news-content p {
+  color: #777777;
+}
+
+body.dark .top-news .card-footer h6 {
+  background-color: #3da864;
+}
+
+/* latest news card  */
+
+body.dark .latest-news-content .card {
+  background-color: #121212;
+}
+
+body.dark .latest-news-content .card h6 {
+  color: #777777;
+}
+body.dark .latest-news-content .card p {
+  color: #777777;
+}
+
+body.dark .latest-news-content .card .card-footer {
+  border-top: 1px solid #414141;
+}
+
+body.dark .view-all a {
+  color: #1ed760;
+}
+body.dark .view-all a img {
+  filter: contrast(0);
+}
+/* -----------End news section-------------- */
