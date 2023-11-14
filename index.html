@@ -66,7 +66,379 @@
       <main class="main-container">
         <div class="title">My Portfolio</div>
         <div class="contant-container">
-          <div class="card dashboard-card"></div>
+          <div class="arrow">
+            <img src="./icons/Vector-right-arrow.svg" alt="" />
+          </div>
+          <div class="card dashboard-card">
+            <div class="portfolio-container">
+              <div class="portfolio-status">
+                <img src="./icons/apple-with-text.svg" alt="Apple logo" />
+                <img src="./imgs//Chart-down.svg" />
+              </div>
+              <div class="portfolio-info">
+                <div class="total-shares">
+                  <span class="text">Total Shares</span>
+                  <span class="amount">$683.43</span>
+                </div>
+                <div class="total-return">
+                  <span class="text">Total Return</span>
+                  <span class="amount red"
+                    >-$0.41 <i data-feather="arrow-down" class="amount-icon"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-container">
+              <div class="portfolio-status">
+                <img src="./icons/meta.svg" alt="Apple logo" />
+                <img src="./imgs//Chart-Up.svg" />
+              </div>
+              <div class="portfolio-info">
+                <div class="total-shares">
+                  <span class="text">Total Shares</span>
+                  <span class="amount">$1366.8</span>
+                </div>
+                <div class="total-return">
+                  <span class="text">Total Return</span>
+                  <span class="amount green"
+                    >+$3098.12
+                    <i data-feather="arrow-up" class="amount-icon"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-container">
+              <div class="portfolio-status">
+                <img src="./icons/microsoft-with-text.svg" alt="Meta logo" />
+                <img src="./imgs//Chart-Up.svg" />
+              </div>
+              <div class="portfolio-info">
+                <div class="total-shares">
+                  <span class="text">Total Shares</span>
+                  <span class="amount">$227.8</span>
+                </div>
+                <div class="total-return">
+                  <span class="text">Total Return</span>
+                  <span class="amount green"
+                    >+$9.72 <i data-feather="arrow-up" class="amount-icon"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-container">
+              <div class="portfolio-status">
+                <img src="./icons/google.svg" alt="Apple logo" />
+                <img src="./imgs//Chart-Up.svg" />
+              </div>
+              <div class="portfolio-info">
+                <div class="total-shares">
+                  <span class="text">Total Shares</span>
+                  <span class="amount">$1139.00</span>
+                </div>
+                <div class="total-return">
+                  <span class="text">Total Return</span>
+                  <span class="amount green"
+                    >+$315.03 <i data-feather="arrow-up" class="amount-icon"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard col-2">
+            <div id="totalWorthContainer" class="total-worth-container card">
+              <div class="total-worth-heading">
+                <div class="total-worth-info">
+                  <div class="total-worth-info-text">
+                    <h3 class="total-worth-info-text-title">Total worth</h3>
+                    <p class="total-worth-info-text-description">Total PNL</p>
+                  </div>
+                  <div class="total-worth-status-container">
+                    <div class="total-worth-status">
+                      <div class="flex-values">
+                        <div class="up-rate">
+                          +18.10% <img src="./icons/Vector1.svg" alt="" />
+                        </div>
+                        <h4>$824.9</h4>
+                      </div>
+                      <span class="total-worth-status-update"
+                        >Last updated at 14:30</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="total-worth-options">
+                  <button class="total-worth-option">1 Day</button>
+                  <button class="total-worth-option active">1 Week</button>
+                  <button class="total-worth-option">1 Month</button>
+                  <button class="total-worth-option">3 Months</button>
+                  <button class="total-worth-option">6 Months</button>
+                  <button class="total-worth-option">1 Year</button>
+                  <button class="total-worth-option">5 Years</button>
+                  <button class="total-worth-option">All</button>
+                </div>
+              </div>
+              <div class="total-worth-chart">
+                <img src="./imgs/Chart.svg" width="100%" />
+              </div>
+            </div>
+            <div id="latestNewsContainer" class="latest-news-container card">
+              <div class="latest-news-header">
+                <h4>Latest News</h4>
+                <div class="options">
+                  <a href="#">View All</a>
+                  <button><img src="./icons/Add-button.svg" /></button>
+                </div>
+              </div>
+              <div class="latest-news">
+                <div class="latest-news-info">
+                  <div class="latest-news-info-logo">
+                    <img src="./icons/apple.svg" />
+                    <div class="latest-news-info-description">
+                      <h3>AAPL</h3>
+                      <p>Apple</p>
+                    </div>
+                  </div>
+                  <div class="latest-news-info-status">
+                    <img src="./icons/sad.svg" />
+                    <span>1 hour ago</span>
+                  </div>
+                </div>
+                <div class="latest-news-text">
+                  Apple's Vision Pro AR Headset Can Diagnose Mental Health?
+                </div>
+              </div>
+              <div class="latest-news">
+                <div class="latest-news-info">
+                  <div class="latest-news-info-logo">
+                    <img src="./icons/meta-no-text.svg" />
+                    <div class="latest-news-info-description">
+                      <h3>META</h3>
+                      <p>Meta Inc.</p>
+                    </div>
+                  </div>
+                  <div class="latest-news-info-status">
+                    <img src="./icons/natural.svg" />
+                    <span>2 hours ago</span>
+                  </div>
+                </div>
+                <div class="latest-news-text">
+                  Meta was leading a selloff in high-quality tech stocks on
+                  Thursday, but its bonds were doing fine.
+                </div>
+              </div>
+              <div class="latest-news">
+                <div class="latest-news-info">
+                  <div class="latest-news-info-logo">
+                    <img src="./icons/microsoft.svg" />
+                    <div class="latest-news-info-description">
+                      <h3>MSFT</h3>
+                      <p>Microsoft</p>
+                    </div>
+                  </div>
+                  <div class="latest-news-info-status">
+                    <img src="./icons/Happy.svg" />
+                    <span>4 hours ago</span>
+                  </div>
+                </div>
+                <div class="latest-news-text">
+                  Microsoft Looks Unstoppable, but There's 1 Reason for Caution.
+                </div>
+              </div>
+              <div class="latest-news">
+                <div class="latest-news-info">
+                  <div class="latest-news-info-logo">
+                    <img src="./icons/google-logo-28FA7991AF-seeklogo 1.svg" />
+                    <div class="latest-news-info-description">
+                      <h3>GOOGL</h3>
+                      <p>Google</p>
+                    </div>
+                  </div>
+                  <div class="latest-news-info-status">
+                    <img src="./icons/Happy.svg" />
+                    <span>3 hours ago</span>
+                  </div>
+                </div>
+                <div class="latest-news-text">
+                  Google Doubles Down with $2 Billion Investment in Claude AI
+                  Developer Anthropic
+                </div>
+              </div>
+              <div class="latest-news">
+                <div class="latest-news-info">
+                  <div class="latest-news-info-logo">
+                    <img src="./icons/Tesla.svg" />
+                    <div class="latest-news-info-description">
+                      <h3>TSLA</h3>
+                      <p>Tesla</p>
+                    </div>
+                  </div>
+                  <div class="latest-news-info-status">
+                    <img src="./icons/sad.svg" />
+                    <span>3 hours ago</span>
+                  </div>
+                </div>
+                <div class="latest-news-text">
+                  Tesla's Tough Stretch: Why Stock Is Set To Open Lower Today?
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="assets-distribution-container card">
+            <div class="assets-distribution-header">
+              <h4>Assets Distribution</h4>
+              <div class="options">
+                <a href="#">View More Assets</a>
+                <button><img src="./icons/Add-button.svg" /></button>
+              </div>
+            </div>
+            <div class="assets-distribution-content">
+              <div class="assets assets-distribution">
+                <div class="assets-distribution-info">
+                  <div class="assets-distribution-info-logo">
+                    <img src="./icons/apple.svg" />
+                    <div class="assets-distribution-info-description">
+                      <h3>AAPL</h3>
+                      <p>Apple</p>
+                    </div>
+                  </div>
+                  <div class="assets-distribution-status">
+                    <div class="purchase">
+                      <span class="status-title">Purchase </span>
+                      <span class="purchase red">$169.59</span>
+                    </div>
+                    <div class="asset-percentage">
+                      <span class="status-title">Asset %</span>
+                      <span class="percentage">15%</span>
+                    </div>
+                    <div class="change">
+                      <span class="status-title">Change</span>
+                      <div class="flex-values">
+                        <div class="down-rate">
+                          -0.06%
+                          <img src="./icons/Vectordownarrow.svg" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="assets-distribution-info">
+                  <div class="assets-distribution-info-logo">
+                    <img src="./icons/meta-no-text.svg" />
+                    <div class="assets-distribution-info-description">
+                      <h3>META</h3>
+                      <p>Meta Inc.</p>
+                    </div>
+                  </div>
+                  <div class="assets-distribution-status">
+                    <div class="purchase">
+                      <span class="status-title">Purchase </span>
+                      <span class="purchase green">$93.16</span>
+                    </div>
+                    <div class="asset-percentage">
+                      <span class="status-title">Asset %</span>
+                      <span class="percentage">30%</span>
+                    </div>
+                    <div class="change">
+                      <span class="status-title">Change</span>
+                      <div class="flex-values">
+                        <div class="up-rate">
+                          +226.67%
+                          <img src="./icons/Vector1.svg" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="assets-distribution-info">
+                  <div class="assets-distribution-info-logo">
+                    <img src="./icons/microsoft.svg" />
+                    <div class="assets-distribution-info-description">
+                      <h3>MSFT</h3>
+                      <p>Microsoft</p>
+                    </div>
+                  </div>
+                  <div class="assets-distribution-status">
+                    <div class="purchase">
+                      <span class="status-title">Purchase </span>
+                      <span class="purchase green">$321.80</span>
+                    </div>
+                    <div class="asset-percentage">
+                      <span class="status-title">Asset %</span>
+                      <span class="percentage">5%</span>
+                    </div>
+                    <div class="change">
+                      <span class="status-title">Change</span>
+                      <div class="flex-values">
+                        <div class="up-rate">
+                          +4.27%
+                          <img src="./icons/Vector1.svg" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="assets-distribution-info">
+                  <div class="assets-distribution-info-logo">
+                    <img src="./icons/google-logo-28FA7991AF-seeklogo 1.svg" />
+                    <div class="assets-distribution-info-description">
+                      <h3>GOOGL</h3>
+                      <p>Google</p>
+                    </div>
+                  </div>
+                  <div class="assets-distribution-status">
+                    <div class="purchase">
+                      <span class="status-title">Purchase </span>
+                      <span class="purchase green">$94.51</span>
+                    </div>
+                    <div class="asset-percentage">
+                      <span class="status-title">Asset %</span>
+                      <span class="percentage">25%</span>
+                    </div>
+                    <div class="change">
+                      <span class="status-title">Change</span>
+                      <div class="flex-values">
+                        <div class="up-rate">
+                          +30.82%
+                          <img src="./icons/Vector1.svg" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="assets-distribution-info">
+                  <div class="assets-distribution-info-logo">
+                    <img src="./icons/Tesla.svg" />
+                    <div class="assets-distribution-info-description">
+                      <h3>TSLA</h3>
+                      <p>Tesla</p>
+                    </div>
+                  </div>
+                  <div class="assets-distribution-status">
+                    <div class="purchase">
+                      <span class="status-title">Purchase </span>
+                      <span class="purchase green">$161.83</span>
+                    </div>
+                    <div class="asset-percentage">
+                      <span class="status-title">Asset %</span>
+                      <span class="percentage">25%</span>
+                    </div>
+                    <div class="change">
+                      <span class="status-title">Change</span>
+                      <div class="flex-values">
+                        <div class="up-rate">
+                          +25.58%
+                          <img src="./icons/Vector1.svg" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="assets-distribution-chart">
+                <img src="imgs/GAUGE CHART.svg" />
+              </div>
+            </div>
+          </div>
         </div>
       </main>
       <!--------------- End main -------------- -->

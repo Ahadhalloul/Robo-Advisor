@@ -26,7 +26,7 @@ body {
   grid-template-areas:
     "sidebar header"
     "sidebar main";
-  grid-template-columns: 280px auto;
+  grid-template-columns: 272px auto;
   grid-template-rows: 90px auto;
 }
 
@@ -408,6 +408,11 @@ ul li {
   padding: 40px;
   /* min-height: 100vh; */
 }
+@media screen and (max-width: 1250px) {
+  .main-container {
+    padding: 25px;
+  }
+}
 .title {
   font-weight: 700;
   font-size: 18px;
@@ -432,9 +437,316 @@ ul li {
 /*---------------------------- */
 /* ----------- Start Dashboard section-------------- */
 .dashboard-card {
-  height: 550px;
-  width: 200px;
+  display: flex;
+  max-width: 100%;
+  height: 245px;
+  padding: 35px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 50px;
+  overflow-x: hidden;
 }
+
+.contant-container {
+  position: relative;
+}
+.contant-container .arrow {
+  top: 100px;
+  position: absolute;
+  right: -20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0px 4px 4px 0px #0000000d;
+  text-align: center;
+}
+.contant-container .arrow img {
+  vertical-align: bottom;
+  margin-top: 12px;
+}
+
+.portfolio-container {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 25px;
+}
+
+.portfolio-status {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  gap: 35px;
+}
+
+.portfolio-status img:nth-child(1) {
+  width: 97px;
+}
+
+.portfolio-status img:nth-child(2) {
+  width: 75px;
+}
+.portfolio-info {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 15px;
+}
+
+.portfolio-info .total-shares,
+.portfolio-info .total-return {
+  display: flex;
+  gap: 45px;
+}
+
+.portfolio-info .total-shares .text,
+.portfolio-info .total-return .text {
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #7a7a7a;
+}
+
+.portfolio-info .total-return .amount {
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.portfolio-info .total-return .amount.green {
+  color: #3da864;
+}
+
+.portfolio-info .total-return .amount.red {
+  color: #d34645;
+}
+
+.portfolio-info .total-return .amount .amount-icon {
+  width: 19px !important;
+  height: 19px !important;
+}
+
+.dashboard.col-2 {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.total-worth-container {
+  flex: 2;
+  display: inline-block;
+  height: auto;
+  padding: 35px;
+}
+
+.total-worth-heading {
+  width: 100%;
+  height: 200px;
+}
+
+.total-worth-info {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #f3f3f3;
+  padding-bottom: 15px;
+}
+
+.total-worth-status-update {
+  font-size: 14px;
+  color: #848484;
+}
+
+.total-worth-options {
+  display: flex;
+  /* padding: 25px; */
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.total-worth-option {
+  width: auto;
+  color: 000;
+  text-align: center;
+  font-size: 11px;
+  font-style: normal;
+  display: flex;
+  padding: 8px 12px;
+  flex-flow: row nowrap;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 100px;
+  border: 1px solid #ebedee;
+  background: #fff;
+}
+
+.total-worth-option.active {
+  background: #000;
+  color: #fff;
+  border: none;
+}
+
+.latest-news-container {
+  flex: 1;
+  display: inline-block;
+  height: auto;
+  position: relative;
+  display: flex;
+  padding: 40px;
+  flex-flow: column nowrap;
+}
+
+.latest-news-header .options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row nowrap;
+  gap: 25px;
+}
+
+.latest-news-header .options a {
+  color: #414141;
+  text-decoration: none;
+}
+
+.latest-news-header .options button {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.latest-news-header .options a:hover {
+  text-decoration: underline;
+}
+
+.latest-news {
+  border-bottom: 1px solid #f3f3f3;
+  display: flex;
+  padding: 22px 0;
+  gap: 25px;
+  flex-flow: column nowrap;
+}
+
+.latest-news-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.latest-news-info-logo {
+  display: flex;
+  gap: 15px;
+}
+
+.latest-news-info-description p {
+  color: #7a7a7a;
+  font-size: 14px;
+}
+
+.latest-news-info-status {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
+  color: #7a7a7a;
+  font-size: 15px;
+}
+
+.latest-news:last-of-type {
+  border: none;
+}
+
+.assets-distribution-container {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.latest-news-header,
+.assets-distribution-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row nowrap;
+  width: 100%;
+}
+
+.assets-distribution-header .options,
+.latest-news-header .options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row nowrap;
+  gap: 25px;
+}
+
+.assets-distribution-header .options a,
+.latest-news-header .options a {
+  color: #414141;
+  text-decoration: none;
+}
+
+.assets-distribution-header .options button,
+.latest-news-header .options button {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.assets-distribution-header .options a:hover,
+.latest-news-header .options a:hover {
+  text-decoration: underline;
+}
+
+.assets-distribution-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 35px;
+}
+
+.assets-distribution-info {
+  flex: 2;
+  gap: 120px;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f1f0f0;
+}
+
+.assets-distribution-info:last-of-type {
+  border: none;
+}
+
+.assets-distribution-info-logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.assets-distribution-status {
+  display: flex;
+  gap: 25px;
+}
+
+.assets-distribution-status > div {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.assets-distribution-status .purchase.red {
+  color: #d34645;
+}
+
+.assets-distribution-status .purchase.green {
+  color: #3da864;
+}
+
 /* ----------- End Dashboard section -------------- */
 
 /*---------------------------- */
