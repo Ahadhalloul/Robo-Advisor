@@ -44,7 +44,9 @@
             <i data-feather="bell" class="notify-icon"></i>
             <div class="notification-count">2</div>
           </div>
-          <div class="line"></div>
+          <div class="line">
+            <img src="./icons/line.svg" alt="" />
+          </div>
           <div class="user">
             <div class="user-img">
               <img
@@ -85,7 +87,7 @@
           </h5>
           <h4>$5380,90 <i data-feather="eye-off" class="eye-icon"></i></h4>
         </div>
-        <div class="mode">
+        <!-- <div class="mode">
           <h6 class="light-mode">
             <i data-feather="sun" class="light-icon"></i>
             <span>Light</span>
@@ -94,8 +96,21 @@
             <i data-feather="moon" class="dark-icon"></i>
             <span>Dark</span>
           </h6>
+        </div> -->
+        <div class="mode2">
+          <a (click)="lightTheme()">
+            <h6 class="light-mode">
+              <i data-feather="sun" class="light-icon"></i>
+              <span>Light</span>
+            </h6>
+          </a>
+          <a (click)="darkTheme()">
+            <h6 class="dark-mode">
+              <i data-feather="moon" class="dark-icon"></i>
+              <span>Dark</span>
+            </h6>
+          </a>
         </div>
-
         <div class="sidebar-van-container">
           <div class="sidebar-up-nav-container">
             <ul>
