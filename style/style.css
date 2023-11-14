@@ -2475,7 +2475,9 @@ tr:not(:last-child) td {
 #hideArrow {
   width: 17px;
 }
-
+#showArrow {
+  width: 22px;
+}
 /* ----------- End stock recommendation section-------------- */
 
 /* --------------------------------------- */
