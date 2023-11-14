@@ -448,10 +448,10 @@ ul li {
   overflow-x: hidden;
 }
 
-.contant-container {
+.contant-container.dashboard {
   position: relative;
 }
-.contant-container .arrow {
+.contant-container.dashboard .arrow {
   top: 100px;
   position: absolute;
   right: -20px;
@@ -462,7 +462,7 @@ ul li {
   box-shadow: 0px 4px 4px 0px #0000000d;
   text-align: center;
 }
-.contant-container .arrow img {
+.contant-container.dashboard .arrow img {
   vertical-align: bottom;
   margin-top: 12px;
 }
