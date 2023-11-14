@@ -49,3 +49,18 @@ let infoBlock = document.querySelector("#info-block");
 function toggleInfoBlock() {
   infoBlock.classList.toggle("hide");
 }
+
+// ---------------------------------------------
+// Dark mode toggle
+// add class .dark to body
+let body = document.getElementsByTagName("body")[0];
+let lightIcon = document.querySelector(".light-mode");
+let darkIcon = document.querySelector(".dark-mode");
+
+lightIcon.addEventListener("click", function () {
+  body.classList.remove("dark");
+});
+
+darkIcon.addEventListener("click", function () {
+  body.classList.add("dark");
+});
