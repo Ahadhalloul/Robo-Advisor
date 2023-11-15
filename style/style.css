@@ -662,11 +662,10 @@ ul li {
   outline: none;
 }
 
-.latest-news {
+.latest-news-container .latest-news {
   border-bottom: 1px solid #f3f3f3;
   display: flex;
-  padding: 22px 0;
-  gap: 25px;
+  padding: 20px 5px 10px;
   flex-flow: column nowrap;
 }
 
