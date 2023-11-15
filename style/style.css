@@ -510,6 +510,7 @@ ul li {
 
 .portfolio-info .total-shares,
 .portfolio-info .total-return {
+  justify-content: space-between;
   display: flex;
   gap: 20px;
 }
