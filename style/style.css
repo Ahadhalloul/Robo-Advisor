@@ -2150,14 +2150,12 @@ tr:not(:last-child) td {
   }
   .portfolio-cumulative-content.flex-text-row div {
     width: 100%;
-    justify-content: center;
   }
   .portfolio-cumulative-content.flex-text-row div .small-card {
-    width: 160px;
+    width: 150px;
   }
   .portfolio-cumulative-content.flex-text-row div .card {
-    max-width: 500px;
-    margin: 0 auto;
+    max-width: 470px;
   }
 }
 
