@@ -56,7 +56,6 @@ body {
   width: 350px;
   border-radius: 8px;
   margin-left: 10px;
-  /* margin: 30px; */
   display: flex;
   align-items: center;
   height: 35px;
@@ -82,11 +81,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-/* .line {
-  width: 1.5px;
-  height: 25px;
-  background-color: var(--primary-text-color);
-} */
+
 .notify-icon-container {
   position: relative;
 }
@@ -150,7 +145,6 @@ body {
 .header-user-nav .user {
   display: flex;
   flex-direction: row;
-  /* justify-content: center; */
   align-items: center;
   flex-wrap: nowrap;
 }
@@ -195,15 +189,11 @@ body {
 .sidebar-container {
   display: flex;
   grid-area: sidebar;
-  /* background-color: var(--background-gray-color); */
   background: linear-gradient(180deg, #eaeaff 0%, #e4fff2 100%);
-
   height: 100%;
   border-right: 1px solid #d3d3d3;
   min-height: 100vh;
   flex-direction: column;
-  /* justify-content: center; */
-  /* align-items: center; */
   padding: 15px 30px;
   box-shadow: 10px 0px 50px 0px #00000012;
 
@@ -212,10 +202,19 @@ body {
   position: fixed; */
 }
 
+@media screen and (max-width: 1200px) {
+  .container {
+    grid-template-columns: 260px auto;
+  }
+  .sidebar-up-nav-container,
+  .sidebar-van-container {
+    font-size: 15px;
+  }
+}
+
 .logo img {
   width: 150px;
   height: 70px;
-  /* background-color: blue; */
   margin-bottom: 10px;
 }
 .totel-investment {
@@ -328,7 +327,6 @@ body {
   font-size: 16px;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   height: 70%;
   font-weight: 700;
 }
@@ -393,7 +391,6 @@ ul li {
   padding-right: 40px;
 }
 .stock-prediction-select-container {
-  /* margin-left: 4px; */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -419,13 +416,6 @@ ul li {
 .dashboard-icon-color {
   filter: brightness(0);
 }
-/* .filter-icon-color {
-  filter: brightness(0);
-} */
-
-/* .stock-recommendation-icon-color {
-  background-color: #3d3dfe;
-} */
 
 /*---------------------------- */
 /* ---------- Start main ------------ */
@@ -433,7 +423,6 @@ ul li {
   grid-area: main;
   background-color: var(--background-gray-color);
   padding: 40px;
-  /* min-height: 100vh; */
 }
 @media screen and (max-width: 1250px) {
   .main-container {
@@ -457,7 +446,6 @@ ul li {
 .card-head {
   font-weight: 700;
   border-bottom: 1px solid #f0f0f0;
-  /* padding: 20px 0px; */
   padding-bottom: 25px;
   font-size: 16px;
 }
@@ -596,7 +584,6 @@ ul li {
 
 .total-worth-options {
   display: flex;
-  /* padding: 25px; */
   height: 100px;
   justify-content: center;
   align-items: center;
@@ -673,10 +660,6 @@ ul li {
   border: none;
   outline: none;
 }
-/* 
-.latest-news-header .options a:hover {
-  text-decoration: underline;
-} */
 
 .latest-news {
   border-bottom: 1px solid #f3f3f3;
@@ -762,17 +745,9 @@ ul li {
   border: none;
   outline: none;
 }
-/* 
-.assets-distribution-header .options a:hover,
-.latest-news-header .options a:hover {
-  text-decoration: underline;
-} */
 
 .assets-distribution-content {
   width: 100%;
-  /* display: flex;
-  justify-content: space-between;
-  padding: 10px; */
   padding: 15px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -781,8 +756,6 @@ ul li {
 
 .assets-distribution-info {
   flex: 2;
-  /* gap: 120px; */
-  /* gap: 40px; */
   display: flex;
   justify-content: space-between;
   margin: 10px 0;
@@ -873,10 +846,6 @@ ul li {
 /* ----------- End Dashboard section -------------- */
 
 /*---------------------------- */
-
-/*---------------------------- */
-
-/*---------------------------- */
 /* ----------- Start portfolio optimization section-------------- */
 
 .welcome-card {
@@ -900,7 +869,6 @@ ul li {
 }
 .welcome-card img {
   width: 100%;
-  /* height: 300px; */
 }
 
 .level-card-title {
@@ -925,8 +893,6 @@ ul li {
 .level-card {
   box-shadow: 0px 12px 30px 0px #00000012;
   padding: 10px 20px;
-  /* width: 300px; */
-  /* height: 100px; */
   text-align: center;
   font-size: 18px;
   font-weight: 700;
@@ -1010,7 +976,6 @@ input::placeholder {
   border-radius: 5px;
   padding: 10px;
   transition: 0.2s;
-  /* display: none; */
 }
 .green-sun-icon {
   color: #1ea84f;
@@ -1073,9 +1038,7 @@ button:hover {
 .portfolio-assets-hide {
   display: none;
 }
-/* .down-arrow-hide {
-  display: none;
-} */
+
 .potrfolio-assets-lable {
   font-size: 12px;
 }
@@ -1087,13 +1050,6 @@ button:hover {
 @media screen and (max-width: 1200px) {
   .table-input {
     width: 80%;
-  }
-  .container {
-    grid-template-columns: 260px auto;
-  }
-  .sidebar-up-nav-container,
-  .sidebar-van-container {
-    font-size: 15px;
   }
 }
 
@@ -1282,7 +1238,6 @@ input::-webkit-outer-spin-button {
 .summary-assets-table thead {
   background-color: #f9f9f9;
   border-radius: 10px;
-  /* padding-left: 3px; */
 }
 .summary-assets-table thead th {
   padding: 10px;
@@ -2111,7 +2066,6 @@ tr:not(:last-child) td {
   flex-direction: row;
   align-items: center;
   gap: 30px;
-  /* justify-content: space-between; */
 }
 .flex-text-col {
   display: flex;
@@ -2142,7 +2096,6 @@ tr:not(:last-child) td {
 
 .weight-distribution-card .flex-text-row {
   gap: 20px;
-  /* justify-content: space-between; */
 }
 
 .weight-distribution-container .section-title {
@@ -2163,7 +2116,6 @@ tr:not(:last-child) td {
   width: 15px !important;
   position: absolute;
   right: 10px;
-  /* display: none; */
   cursor: pointer;
 }
 
@@ -2530,12 +2482,6 @@ tr:not(:last-child) td {
   width: 100%;
 }
 
-@media screen and (max-width: 1116px) {
-  .validation-table table {
-    font-size: 13px;
-  }
-}
-
 .recommended-portfolio-content,
 .user-portfolio-content {
   width: 100%;
@@ -2550,11 +2496,15 @@ tr:not(:last-child) td {
   margin-left: 8px;
 }
 
-@media screen and (max-width: 1114px) {
+@media screen and (max-width: 1116px) {
+  .validation-table table {
+    font-size: 13px;
+  }
   .advanced-details-content .flex-row {
     gap: 15px;
   }
 }
+
 .advanced-details-content .table-container {
   padding: 20px 15px;
   background-color: #fafffb;
@@ -2638,6 +2588,7 @@ tr:not(:last-child) td {
 .news-hero-content {
   max-width: 300px;
 }
+
 @media screen and (max-width: 1110px) {
   .news-hero-content {
     min-width: 220px;
@@ -2646,6 +2597,7 @@ tr:not(:last-child) td {
     font-size: 20px;
   }
 }
+
 .news-hero-content h2 {
   padding-top: 10px;
 }
@@ -2775,7 +2727,6 @@ tr:not(:last-child) td {
 .latest-news {
   padding: 20px;
   grid-area: latest-news;
-  /* min-width: 280px; */
 }
 
 .latest-news-content .card {
